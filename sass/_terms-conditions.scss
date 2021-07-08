@@ -1,0 +1,77 @@
+.terms-conditions {
+  padding: 0 10rem;
+  @media only screen and (max-width: 800px) {
+    padding: 0 2rem;
+  }
+  &__title {
+    font-family: $monseratt;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.75;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 4rem;
+    @media only screen and (max-width: 800px) {
+      padding-bottom: 1.4rem;
+    }
+    &::after {
+      content: "";
+      background-color: $nude;
+      width: 10%;
+      height: 1.5px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem;
+      @media only screen and (max-width: 800px) {
+        width: 50%;
+      }
+    }
+  }
+  &__wrapper {
+    background-color: $white;
+    z-index: 5;
+    height: auto;
+    font-family: $monseratt;
+    color: $lightGrey;
+    padding: 2rem 8rem;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &::before {
+      content: "";
+      width: 100vw;
+      height: calc(100% - 45rem);
+      display: block;
+      background-color: $white;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 200;
+      @media only screen and (max-width: 800px) {
+        font-size: 0.8rem;
+      }
+    }
+    @media only screen and (max-width: 800px) {
+      padding: 1.2rem 1.5rem;
+    }
+  }
+}
+
+.page-template-terms-conditions {
+  .header-nav {
+    border-bottom: 1px solid $nude;
+  }
+}

@@ -1,0 +1,1373 @@
+@font-face {
+  font-family: "ciclegordita_italic";
+  src: url("/fonts/cicle_gordita_italic-webfont.woff2") format("woff2"), url("/fonts/cicle_gordita_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "cochin";
+  src: url("/fonts/Cochin-LT-Font.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+.container-margins {
+  padding: 0 2rem; }
+  @media only screen and (max-width: 800px) {
+    .container-margins {
+      padding: 0 0.5rem; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #c79b7e; }
+
+footer {
+  height: 50px; }
+
+a {
+  font-family: "cochin"; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.main-qa-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 5rem;
+  margin: 0 10rem;
+  margin-top: 5rem; }
+  @media only screen and (max-width: 800px) {
+    .main-qa-container {
+      margin: 1.5rem 2rem;
+      padding: 1rem 2.5rem; } }
+  .main-qa-container h1,
+  .main-qa-container h2,
+  .main-qa-container h3,
+  .main-qa-container h4,
+  .main-qa-container h5,
+  .main-qa-container h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem; }
+  .main-qa-container p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    margin: 1.2rem 0; }
+  .main-qa-container__title {
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem; }
+
+.am-select-date-title {
+  display: none; }
+
+.am-calendar-picker {
+  font-family: "ciclegordita" !important; }
+
+.am-select-service {
+  font-family: "ciclegordita" !important; }
+
+.el-button--primary span {
+  color: white !important; }
+
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-appointment-times
+.el-radio-button
+.el-radio-button__orig-radio:checked
++ .el-radio-button__inner {
+  background-color: black !important;
+  color: white !important;
+  font-weight: 800 !important; }
+
+.amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-calendar-picker
+.c-day-background,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-calendar-picker
+.c-day-background {
+  background-color: transparent !important;
+  border: 3px solid #c79b7e !important; }
+
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-add-coupon
+.el-input-group__append {
+  background-color: #c79b7e !important;
+  border-color: none !important; }
+
+.am-svg-wrapper {
+  display: none !important; }
+
+.redirect-link a {
+  color: white !important; }
+
+.el-input-group__append {
+  border-color: transparent !important; }
+
+.am-select-date-title {
+  display: block !important; }
+
+.am-select-service-title {
+  display: none !important; }
+
+.am-confirmation-booking-header img {
+  display: none; }
+
+.am-custom-fields {
+  margin-top: 2rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem; }
+  .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
+    border-top: 2px solid #000;
+    padding-top: 1.5rem; }
+    @media only screen and (max-width: 800px) {
+      .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
+        border: none; } }
+    @media only screen and (max-width: 800px) {
+      .am-custom-fields .el-row .el-col:nth-child(5):nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6):nth-child(5) {
+        border-top: 2px solid #000; } }
+  .am-custom-fields:before {
+    content: "Let's take care of the legal stuff";
+    display: block;
+    top: 0;
+    left: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "PT Serif", serif;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 800px) {
+      .am-custom-fields:before {
+        margin-left: 0;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem; } }
+  .am-custom-fields .el-row:first-child {
+    margin-top: 1.5rem; }
+
+.am-confirmation-booking-cost .el-row:nth-child(2),
+.am-add-coupon {
+  display: none; }
+
+.am-add-coupon {
+  display: none !important; }
+
+.am-confirmation-deposit {
+  display: block !important; }
+
+.am-active-picker form.el-form--label-top {
+  margin-top: 0rem !important; }
+
+.am-custom-fields {
+  border-top: 2px solid #000; }
+
+.am-confirm-booking-payment {
+  border-top: 2px solid #000;
+  padding-top: 0;
+  margin-top: 0; }
+  .am-confirm-booking-payment .el-col:first-child:before {
+    content: "Payment Information";
+    display: block;
+    top: 0;
+    left: 0;
+    font-family: "PT Serif", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-top: 1.2rem; }
+    @media only screen and (max-width: 800px) {
+      .am-confirm-booking-payment .el-col:first-child:before {
+        margin-left: 0;
+        font-size: 1.2rem; } }
+
+.el-select-dropdown .el-select-dropdown__item:hover {
+  background-color: #c79b7e !important; }
+
+.amelia-app-booking #am-step-booking .am-confirm-booking .am-employee-photo,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-employee-photo {
+  display: none !important; }
+
+label[for="serviceId"] {
+  margin-left: 5rem !important; }
+  @media only screen and (max-width: 800px) {
+    label[for="serviceId"] {
+      margin-left: 6rem !important; } }
+
+.amelia-app-booking
+#am-step-booking
+.am-confirm-booking
+.am-custom-fields
+.el-row
+.el-upload-dragger,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-custom-fields
+.el-row
+.el-upload-dragger {
+  height: 85px !important; }
+
+.amelia-app-booking #am-step-booking .am-select-service .am-button-wrapper,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-service
+.am-button-wrapper {
+  position: relative; }
+
+.am-cf-1 {
+  margin-top: 1rem; }
+  @media only screen and (max-width: 800px) {
+    .am-cf-1 {
+      margin-top: 0; } }
+
+.am-custom-fields .el-row .el-col:nth-child(5)::before {
+  content: "Anything else you'd like to tell me?";
+  font-family: "PT Serif", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1.4rem; }
+  @media only screen and (max-width: 800px) {
+    .am-custom-fields .el-row .el-col:nth-child(5)::before {
+      margin-left: 0;
+      font-size: 1.2rem; } }
+
+.am-cf-3 {
+  margin-top: 1.9rem; }
+
+.am-cf-12 {
+  margin-top: 6rem; }
+
+.amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-button-wrapper
+.el-button,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-button-wrapper
+.el-button {
+  background-color: #000 !important; }
+  .amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-button-wrapper
+.el-button span,
+  .amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-button-wrapper
+.el-button span {
+    color: #fff !important; }
+
+.am-cf-1 {
+  margin-top: 3.3rem; }
+  @media only screen and (max-width: 800px) {
+    .am-cf-1 {
+      margin-top: 0; } }
+
+.am-custom-fields .el-row .el-col:nth-child(4) {
+  margin-bottom: 1rem; }
+
+.amelia-app-booking
+#am-step-booking
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2),
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2) {
+  margin-top: 5.5rem; }
+  @media only screen and (max-width: 800px) {
+    .amelia-app-booking
+#am-step-booking
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2),
+    .amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2) {
+      margin-top: 0; } }
+
+.el-form-item {
+  margin-bottom: 22px; }
+
+.amelia-app-booking .am-add-element i,
+.am-modal.am-in-body .am-add-element i {
+  color: #fff !important; }
+
+.amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-button-wrapper
+.el-button,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-button-wrapper
+.el-button {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto; }
+
+.am-select-date {
+  margin-bottom: 0.5rem !important; }
+  .am-select-date::after {
+    content: "Selected time slot is approximation for your full service duration";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    margin-top: -3.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .am-select-date::after {
+        margin-top: -2.5rem; } }
+  .am-select-date .am-show-times .am-select-service-date-transition::after {
+    content: "Selected time slot is approximation for your full service duration";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .am-select-date .am-show-times .am-select-service-date-transition::after {
+        margin-top: 4.5rem;
+        position: relative;
+        top: -21px; } }
+  .am-select-date .amelia-app-booking #am-step-booking.am-active-picker .am-select-date,
+  .am-select-date .amelia-app-booking
+.am-step-booking-catalog.am-active-picker
+.am-select-date {
+    margin-top: -5rem; }
+  @media only screen and (max-width: 800px) {
+    .am-select-date #amelia-app-booking0 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
+  .am-select-date .am-extras .el-col-7 {
+    display: none; }
+  .am-select-date .am-extras .el-row:nth-child(2) .el-col:nth-child(1) {
+    display: none; }
+  .am-select-date .am-confirmation-booking-cost .am-confirmation-extras-cost {
+    display: block !important; }
+  .am-select-date .am-confirmation-booking-cost .el-row:nth-child(4) {
+    display: none; }
+  .am-select-date .am-confirmation-booking .am-confirm-booking-form::after {
+    display: none !important; }
+  .am-select-date .am-active-picker .el-form--label-top::after {
+    display: none !important; }
+
+.am-active-picker .am-select-service-option::before {
+  display: none !important; }
+
+.am-active-picker .am-select-service-option::after {
+  display: none !important; }
+
+.am-active-picker .am-add-element {
+  margin-top: 0; }
+
+.am-active-picker .am-extras div:first-child {
+  margin-top: 0rem !important; }
+
+.am-extras {
+  margin-top: 3rem; }
+
+.am-active-picker .am-extras {
+  margin-top: 0; }
+
+#amelia-step-booking0 {
+  padding: 4rem 0; }
+
+.am-flex-row-middle-align-mobile {
+  justify-content: center; }
+
+@media only screen and (max-width: 800px) {
+  .amelia-app-booking #am-step-booking .am-confirm-booking .el-form-item,
+  .amelia-app-booking .am-step-booking-catalog .am-confirm-booking .el-form-item {
+    margin-top: 1rem; } }
+
+@media only screen and (max-width: 800px) {
+  .am-select-date::after {
+    margin-top: -2.5rem !important; } }
+
+@media only screen and (max-width: 800px) {
+  #amelia-step-booking0 {
+    margin-top: 4.5rem !important; } }
+
+.am-extras .el-col:nth-child(2) {
+  display: none; }
+
+.am-extras .el-row:nth-child(2) .el-col .el-form-item {
+  display: none; }
+
+.entry-title,
+.screen-reader-text,
+.post-edit-link {
+  display: none; }
+
+.home .entry-content h2 {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem; }
+
+.booked-calendar-wrap {
+  max-width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px #000; }
+
+.monthName,
+.days th,
+.number,
+.backToMonth,
+.timeslot,
+.button-text {
+  font-family: "ciclegordita"; }
+
+.booked-title-bar {
+  font-family: "ciclegordita"; }
+
+.body .booked-modal .bm-window .close {
+  font-size: 12px;
+  top: 14px; }
+
+#newAppointmentForm p {
+  font-family: "cochin"; }
+
+#newAppointmentForm .field-paid-service {
+  font-family: "ciclegordita"; }
+
+.that-hair-glow-footer-quote {
+  font-family: "ciclegordita";
+  font-size: 2.1rem;
+  text-align: center;
+  color: #fff; }
+  @media only screen and (max-width: 800px) {
+    .that-hair-glow-footer-quote {
+      font-size: 1.6rem;
+      padding: 0 1.2rem; } }
+
+.that-hair-glow-footer-txt {
+  font-family: "ciclegordita";
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1rem; }
+
+.address {
+  font-family: "ciclegordita";
+  text-align: center;
+  font-size: 1.3rem; }
+
+.new-appt,
+#submit-request-appointment,
+.cancel {
+  cursor: pointer; }
+
+.field-label,
+.checkbox-radio-block {
+  font-family: "ciclegordita"; }
+
+.booked-calendar-fields::after {
+  content: "Please note: A $25.00 deposit is required prior to booking your appointment";
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: "ciclegordita";
+  font-size: 1rem;
+  font-weight: bold; }
+
+.woocommerce-checkout {
+  max-width: 1024px;
+  margin: 0 auto; }
+  .woocommerce-checkout input[type="text"],
+  .woocommerce-checkout input[type="tel"],
+  .woocommerce-checkout input[type="email"] {
+    padding: 0.3rem 0.9rem;
+    outline: none;
+    border: 1px solid #c79b7e;
+    font-family: "ciclegordita"; }
+
+.woocommerce-billing-fields h3 {
+  font-family: "cochin"; }
+
+.woocommerce-billing-fields__field-wrapper label {
+  font-family: "cochin"; }
+
+#select2-billing_country-container,
+#select2-billing_state-container {
+  font-family: "ciclegordita"; }
+
+#order_review_heading {
+  font-family: "cochin";
+  margin-bottom: 0.7rem; }
+
+.product-name,
+.product-total,
+.cart-subtotal,
+.order-total,
+.order-paid,
+.order-remaining {
+  font-family: "cochin"; }
+
+.variation-DepositAmount {
+  font-weight: 700; }
+
+#place_order {
+  background-color: #000;
+  font-family: "ciclegordita";
+  padding: 0.7rem 1.2rem;
+  border-radius: 0; }
+  @media only screen and (max-width: 800px) {
+    #place_order {
+      margin-top: 2rem; } }
+  #place_order:hover {
+    background-color: #216c2a !important;
+    transition: al ease-in 3s; }
+
+.wc_payment_methods,
+.woocommerce-privacy-policy-text {
+  font-family: "ciclegordita"; }
+
+.woocommerce-additional-fields h3,
+#order_comments_field label {
+  font-family: "ciclegordita"; }
+
+#order_comments {
+  font-family: "ciclegordita";
+  padding: 0 0.2rem; }
+
+.about_paypal {
+  font-family: "ciclegordita"; }
+
+.woocommerce-order {
+  max-width: 1024px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 800px) {
+    .woocommerce-order {
+      max-width: 90%; } }
+  .woocommerce-order .woocommerce-thankyou-order-received {
+    font-family: "ciclegordita";
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.9rem;
+    display: block; }
+  .woocommerce-order .woocommerce-thankyou-order-details {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 800px) {
+      .woocommerce-order .woocommerce-thankyou-order-details {
+        flex-direction: column; } }
+    .woocommerce-order .woocommerce-thankyou-order-details li {
+      font-family: "ciclegordita"; }
+      @media only screen and (max-width: 800px) {
+        .woocommerce-order .woocommerce-thankyou-order-details li {
+          border-right: none !important;
+          margin: 0.2rem 0; } }
+
+.woocommerce-order-details__title,
+.woocommerce-column__title {
+  font-family: "cochin";
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+.woocommerce-table--order-details {
+  font-family: "cochin"; }
+
+.woocommerce_deposits_parent_order_summary {
+  width: 100%;
+  font-family: "cochin";
+  margin: 1.2rem 0; }
+  .woocommerce_deposits_parent_order_summary thead {
+    text-align: left; }
+  .woocommerce_deposits_parent_order_summary .order_item {
+    text-align: left; }
+
+address {
+  font-family: "ciclegordita"; }
+
+.woocommerce {
+  padding-top: 2rem; }
+  @media only screen and (max-width: 800px) {
+    .woocommerce {
+      padding: 0 2rem;
+      padding-top: 2rem; } }
+
+.woocommerce-info {
+  display: none; }
+
+.sm-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem; }
+  @media only screen and (max-width: 767px) {
+    .sm-links {
+      margin-bottom: -4rem; } }
+
+.instagram-icon {
+  height: 2.4rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  transition: all 3s ease-in; }
+  .instagram-icon:hover {
+    opacity: 0.7; }
+
+.email-icon {
+  height: 2.4rem;
+  cursor: pointer;
+  transition: all 3s ease-in; }
+  .email-icon:hover {
+    opacity: 0.7; }
+
+.facebook-icon {
+  height: 2.4rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  transition: all 3s ease-in; }
+  .facebook-icon:hover {
+    opacity: 0.7; }
+
+.meta-text {
+  position: relative; }
+
+.header-nav {
+  background-color: #fff;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0; }
+  @media only screen and (max-width: 800px) {
+    .header-nav {
+      padding-left: 0;
+      font-size: 0.6rem;
+      padding-bottom: 0.2rem; } }
+  .header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center; }
+    .header-nav ul li {
+      margin-right: 1.2rem;
+      cursor: pointer; }
+      @media only screen and (max-width: 800px) {
+        .header-nav ul li {
+          margin-bottom: 1.8rem; } }
+      .header-nav ul li li:last-child {
+        margin-bottom: 0.5rem; }
+      .header-nav ul li a {
+        text-decoration: none;
+        color: #000;
+        transition: all 300ms ease-in;
+        border: 2px solid black;
+        padding: 0.3rem;
+        border-radius: 3px; }
+        .header-nav ul li a:hover {
+          color: #c79b7e; }
+
+@media only screen and (max-width: 800px) {
+  .entry-footer {
+    margin-top: -4rem; } }
+
+@media only screen and (max-width: 800px) {
+  #amelia-app-booking0 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; } }
+
+.am-button-wrapper {
+  padding-bottom: 4rem; }
+
+.am-button-wrapper {
+  margin-top: 4rem; }
+  .am-button-wrapper::before {
+    content: "Standard Length: Waist || Braid Size: Small/Med";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 6rem; }
+  .am-button-wrapper:after {
+    content: "Hair will ONLY be included for all box braid styles (Knotless, Goddess, Traditional, etc.)";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -8rem; }
+
+#amelia-step-booking0 {
+  position: relative; }
+
+.am-active-picker .am-button-wrapper::before {
+  display: none; }
+
+.am-active-picker .am-button-wrapper::after {
+  display: none; }
+
+.am-confirmation-booking-header h2::after {
+  content: "Natural hair MUST be completely clean, blow-dried/stretched, tangle free, and have zero products";
+  display: block;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.5rem; }
+
+.am-select-date-title {
+  display: none; }
+
+.am-calendar-picker {
+  font-family: "ciclegordita" !important; }
+
+.am-select-service {
+  font-family: "ciclegordita" !important; }
+
+.el-button--primary span {
+  color: white !important; }
+
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-appointment-times
+.el-radio-button
+.el-radio-button__orig-radio:checked
++ .el-radio-button__inner {
+  background-color: black !important;
+  color: white !important;
+  font-weight: 800 !important; }
+
+.amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-calendar-picker
+.c-day-background,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-calendar-picker
+.c-day-background {
+  background-color: transparent !important;
+  border: 3px solid #c79b7e !important; }
+
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-add-coupon
+.el-input-group__append {
+  background-color: #c79b7e !important;
+  border-color: none !important; }
+
+.am-svg-wrapper {
+  display: none !important; }
+
+.redirect-link a {
+  color: white !important; }
+
+.el-input-group__append {
+  border-color: transparent !important; }
+
+.am-select-date-title {
+  display: block !important; }
+
+.am-select-service-title {
+  display: none !important; }
+
+.am-confirmation-booking-header img {
+  display: none; }
+
+.am-custom-fields {
+  margin-top: 2rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem; }
+  .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
+    border-top: 2px solid #000;
+    padding-top: 1.5rem; }
+    @media only screen and (max-width: 800px) {
+      .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
+        border: none; } }
+    @media only screen and (max-width: 800px) {
+      .am-custom-fields .el-row .el-col:nth-child(5):nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6):nth-child(5) {
+        border-top: 2px solid #000; } }
+  .am-custom-fields:before {
+    content: "Let's take care of the legal stuff";
+    display: block;
+    top: 0;
+    left: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: "PT Serif", serif;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 800px) {
+      .am-custom-fields:before {
+        margin-left: 0;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem; } }
+  .am-custom-fields .el-row:first-child {
+    margin-top: 1.5rem; }
+
+.am-confirmation-booking-cost .el-row:nth-child(2),
+.am-add-coupon {
+  display: none; }
+
+.am-add-coupon {
+  display: none !important; }
+
+.am-confirmation-deposit {
+  display: block !important; }
+
+.am-active-picker form.el-form--label-top {
+  margin-top: 0rem !important; }
+
+.am-custom-fields {
+  border-top: 2px solid #000; }
+
+.am-confirm-booking-payment {
+  border-top: 2px solid #000;
+  padding-top: 0;
+  margin-top: 0; }
+  .am-confirm-booking-payment .el-col:first-child:before {
+    content: "Payment Information";
+    display: block;
+    top: 0;
+    left: 0;
+    font-family: "PT Serif", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-top: 1.2rem; }
+    @media only screen and (max-width: 800px) {
+      .am-confirm-booking-payment .el-col:first-child:before {
+        margin-left: 0;
+        font-size: 1.2rem; } }
+
+.el-select-dropdown .el-select-dropdown__item:hover {
+  background-color: #c79b7e !important; }
+
+.amelia-app-booking #am-step-booking .am-confirm-booking .am-employee-photo,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-employee-photo {
+  display: none !important; }
+
+label[for="serviceId"] {
+  margin-left: 5rem !important; }
+  @media only screen and (max-width: 800px) {
+    label[for="serviceId"] {
+      margin-left: 6rem !important; } }
+
+.amelia-app-booking
+#am-step-booking
+.am-confirm-booking
+.am-custom-fields
+.el-row
+.el-upload-dragger,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-custom-fields
+.el-row
+.el-upload-dragger {
+  height: 85px !important; }
+
+.amelia-app-booking #am-step-booking .am-select-service .am-button-wrapper,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-service
+.am-button-wrapper {
+  position: relative; }
+
+.am-cf-1 {
+  margin-top: 1rem; }
+  @media only screen and (max-width: 800px) {
+    .am-cf-1 {
+      margin-top: 0; } }
+
+.am-custom-fields .el-row .el-col:nth-child(5)::before {
+  content: "Anything else you'd like to tell me?";
+  font-family: "PT Serif", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1.4rem; }
+  @media only screen and (max-width: 800px) {
+    .am-custom-fields .el-row .el-col:nth-child(5)::before {
+      margin-left: 0;
+      font-size: 1.2rem; } }
+
+.am-cf-3 {
+  margin-top: 1.9rem; }
+
+.am-cf-12 {
+  margin-top: 6rem; }
+
+.amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-button-wrapper
+.el-button,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-button-wrapper
+.el-button {
+  background-color: #000 !important; }
+  .amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-button-wrapper
+.el-button span,
+  .amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-button-wrapper
+.el-button span {
+    color: #fff !important; }
+
+.am-cf-1 {
+  margin-top: 3.3rem; }
+  @media only screen and (max-width: 800px) {
+    .am-cf-1 {
+      margin-top: 0; } }
+
+.am-custom-fields .el-row .el-col:nth-child(4) {
+  margin-bottom: 1rem; }
+
+.amelia-app-booking
+#am-step-booking
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2),
+.amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2) {
+  margin-top: 5.5rem; }
+  @media only screen and (max-width: 800px) {
+    .amelia-app-booking
+#am-step-booking
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2),
+    .amelia-app-booking
+.am-step-booking-catalog
+.am-confirm-booking
+.am-confirm-booking-form
+.am-confirm-booking-payment .el-col:nth-child(2) {
+      margin-top: 0; } }
+
+.el-form-item {
+  margin-bottom: 22px; }
+
+.amelia-app-booking .am-add-element i,
+.am-modal.am-in-body .am-add-element i {
+  color: #fff !important; }
+
+.amelia-app-booking
+#am-step-booking
+.am-select-date
+.am-button-wrapper
+.el-button,
+.amelia-app-booking
+.am-step-booking-catalog
+.am-select-date
+.am-button-wrapper
+.el-button {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto; }
+
+.am-select-date {
+  margin-bottom: 0.5rem !important; }
+  .am-select-date::after {
+    content: "Selected time slot is approximation for your full service duration";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    margin-top: -3.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .am-select-date::after {
+        margin-top: -2.5rem; } }
+  .am-select-date .am-show-times .am-select-service-date-transition::after {
+    content: "Selected time slot is approximation for your full service duration";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .am-select-date .am-show-times .am-select-service-date-transition::after {
+        margin-top: 4.5rem;
+        position: relative;
+        top: -21px; } }
+  .am-select-date .amelia-app-booking #am-step-booking.am-active-picker .am-select-date,
+  .am-select-date .amelia-app-booking
+.am-step-booking-catalog.am-active-picker
+.am-select-date {
+    margin-top: -5rem; }
+  @media only screen and (max-width: 800px) {
+    .am-select-date #amelia-app-booking0 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
+  .am-select-date .am-extras .el-col-7 {
+    display: none; }
+  .am-select-date .am-extras .el-row:nth-child(2) .el-col:nth-child(1) {
+    display: none; }
+  .am-select-date .am-confirmation-booking-cost .am-confirmation-extras-cost {
+    display: block !important; }
+  .am-select-date .am-confirmation-booking-cost .el-row:nth-child(4) {
+    display: none; }
+  .am-select-date .am-confirmation-booking .am-confirm-booking-form::after {
+    display: none !important; }
+  .am-select-date .am-active-picker .el-form--label-top::after {
+    display: none !important; }
+
+.am-active-picker .am-select-service-option::before {
+  display: none !important; }
+
+.am-active-picker .am-select-service-option::after {
+  display: none !important; }
+
+.am-active-picker .am-add-element {
+  margin-top: 0; }
+
+.am-active-picker .am-extras div:first-child {
+  margin-top: 0rem !important; }
+
+.am-extras {
+  margin-top: 3rem; }
+
+.am-active-picker .am-extras {
+  margin-top: 0; }
+
+#amelia-step-booking0 {
+  padding: 4rem 0; }
+
+.am-flex-row-middle-align-mobile {
+  justify-content: center; }
+
+@media only screen and (max-width: 800px) {
+  .amelia-app-booking #am-step-booking .am-confirm-booking .el-form-item,
+  .amelia-app-booking .am-step-booking-catalog .am-confirm-booking .el-form-item {
+    margin-top: 1rem; } }
+
+@media only screen and (max-width: 800px) {
+  .am-select-date::after {
+    margin-top: -2.5rem !important; } }
+
+@media only screen and (max-width: 800px) {
+  #amelia-step-booking0 {
+    margin-top: 4.5rem !important; } }
+
+.am-extras .el-col:nth-child(2) {
+  display: none; }
+
+.am-extras .el-row:nth-child(2) .el-col .el-form-item {
+  display: none; }
+
+.terms-conditions {
+  padding: 0 10rem; }
+  @media only screen and (max-width: 800px) {
+    .terms-conditions {
+      padding: 0 2rem; } }
+  .terms-conditions__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 0.75;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 4rem; }
+    @media only screen and (max-width: 800px) {
+      .terms-conditions__title {
+        padding-bottom: 1.4rem; } }
+    .terms-conditions__title::after {
+      content: "";
+      background-color: #c79b7e;
+      width: 10%;
+      height: 1.5px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 1rem; }
+      @media only screen and (max-width: 800px) {
+        .terms-conditions__title::after {
+          width: 50%; } }
+  .terms-conditions__wrapper {
+    background-color: #fff;
+    z-index: 5;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    color: #707070;
+    padding: 2rem 8rem;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
+    .terms-conditions__wrapper::before {
+      content: "";
+      width: 100vw;
+      height: calc(100% - 45rem);
+      display: block;
+      background-color: #fff;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw); }
+    .terms-conditions__wrapper h1,
+    .terms-conditions__wrapper h2,
+    .terms-conditions__wrapper h3,
+    .terms-conditions__wrapper h4,
+    .terms-conditions__wrapper h5,
+    .terms-conditions__wrapper h6 {
+      line-height: 1;
+      margin: 1rem 0; }
+    .terms-conditions__wrapper p {
+      font-size: 1rem;
+      font-weight: 200; }
+      @media only screen and (max-width: 800px) {
+        .terms-conditions__wrapper p {
+          font-size: 0.8rem; } }
+    @media only screen and (max-width: 800px) {
+      .terms-conditions__wrapper {
+        padding: 1.2rem 1.5rem; } }
+
+.page-template-terms-conditions .header-nav {
+  border-bottom: 1px solid #c79b7e; }
+
+.faqs__title {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  margin: 2rem 0; }
+
+.faqs .faq-circles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  margin-top: 6rem; }
+
+.scene {
+  width: 16vw;
+  height: 16vw;
+  margin: 40px 0;
+  perspective: 600px;
+  margin-right: 2rem; }
+  .scene:nth-child(even) {
+    margin-top: -4rem; }
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  border-radius: 50%; }
+
+.card.is-flipped {
+  transform: rotateY(180deg); }
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 50%;
+  text-align: center; }
+
+.card__face--front {
+  background: #fff; }
+  .card__face--front p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.card__face--back {
+  background: #fff;
+  transform: rotateY(180deg); }
+  .card__face--back p {
+    font-size: 0.6rem;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: 1rem; }
+
+.arrow-thin {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  height: 1.2rem;
+  display: block;
+  transform: translate(-50%, 50%); }
+  .arrow-thin__prev {
+    transform: scaleX(-1); }
+
+.abt-slideshow-block {
+  border-radius: 3px;
+  position: relative;
+  width: 100vw; }
+  .abt-slideshow-block__controls {
+    display: flex;
+    position: absolute;
+    bottom: 53px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 10; }
+    @media only screen and (max-width: 800px) {
+      .abt-slideshow-block__controls {
+        bottom: 25px; } }
+    .abt-slideshow-block__controls .arrow {
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+      display: block;
+      cursor: pointer; }
+    .abt-slideshow-block__controls .prev-arrow {
+      transform: scaleX(-1);
+      margin-right: 1rem; }
+  .abt-slideshow-block__slides {
+    position: relative;
+    z-index: 10; }
+    .abt-slideshow-block__slides:after {
+      content: "";
+      position: absolute;
+      top: -72px;
+      right: -68px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      display: block;
+      z-index: -1; }
+      @media only screen and (max-width: 800px) {
+        .abt-slideshow-block__slides:after {
+          top: -31px;
+          right: -42px;
+          height: calc(100% - 2rem); } }
+  .abt-slideshow-block__slide {
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    padding: 105px 50px;
+    position: relative; }
+    @media only screen and (max-width: 800px) {
+      .abt-slideshow-block__slide {
+        padding: 55px 20px; } }
+    .abt-slideshow-block__slide p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      letter-spacing: 0.9px;
+      text-align: center;
+      display: block;
+      position: relative;
+      border-top: 1.5px solid #c79b7e;
+      border-bottom: 1.5px solid #c79b7e;
+      padding: 3rem 0; }
+      @media only screen and (max-width: 800px) {
+        .abt-slideshow-block__slide p {
+          font-size: 1rem;
+          line-height: 1.4;
+          padding: 1.2rem 0; } }
+
+.about-page {
+  margin-bottom: 2rem; }
+  .about-page__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5.5rem;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-bottom: 4.5rem;
+    color: #fff;
+    font-weight: 400;
+    position: relative; }
+    @media only screen and (max-width: 800px) {
+      .about-page__title {
+        font-size: 2.5rem;
+        margin-top: 1.2rem;
+        padding: 0 1.2rem; } }
+    .about-page__title::after {
+      content: "";
+      background-color: #fff;
+      height: 2px;
+      width: 70%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0; }
+      @media only screen and (max-width: 800px) {
+        .about-page__title::after {
+          width: 55%; } }
+  .about-page__content {
+    margin-left: 30rem;
+    margin-right: 10rem;
+    position: relative; }
+    @media only screen and (max-width: 800px) {
+      .about-page__content {
+        margin-left: 1rem;
+        margin-right: 5rem; } }
+    .about-page__content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2.5px;
+      height: calc(100% - 3rem);
+      display: block;
+      background: #fff;
+      margin-left: -30rem; }
+
+footer {
+  margin-top: 2rem; }
+
+/*# sourceMappingURL=style.css.map*/

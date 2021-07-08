@@ -1,0 +1,36 @@
+//colors
+$nude: #c79b7e;
+$white: #fff;
+$black: #000;
+$brown: #7c5046;
+$lightGrey: #707070;
+//fonts
+
+@font-face {
+  font-family: "ciclegordita_italic";
+  src: url("/fonts/cicle_gordita_italic-webfont.woff2") format("woff2"),
+    url("/fonts/cicle_gordita_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cochin";
+  src: url("/fonts/Cochin-LT-Font.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$cochin: "cochin";
+$cicleGordita: "ciclegordita";
+$cicleGorditaItalic: "ciclegordita_italic";
+$monseratt: "Montserrat", sans-serif;
+$playFair: "Playfair Display", serif;
+$PTSerif: "PT Serif", serif;
+
+.container-margins {
+  padding: 0 2rem;
+  @media only screen and (max-width: 800px) {
+    padding: 0 0.5rem;
+  }
+}

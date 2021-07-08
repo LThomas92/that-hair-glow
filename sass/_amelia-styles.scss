@@ -1,0 +1,492 @@
+.am-select-date-title {
+  display: none;
+}
+
+.am-calendar-picker {
+  font-family: $cicleGordita !important;
+}
+
+.am-select-service {
+  font-family: $cicleGordita !important;
+}
+
+.am-active-picker {
+}
+
+.el-button--primary span {
+  color: white !important;
+}
+
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-select-date
+  .am-appointment-times
+  .el-radio-button
+  .el-radio-button__orig-radio:checked
+  + .el-radio-button__inner {
+  background-color: black !important;
+  color: white !important;
+  font-weight: 800 !important;
+}
+
+.amelia-app-booking
+  #am-step-booking
+  .am-select-date
+  .am-calendar-picker
+  .c-day-background,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-select-date
+  .am-calendar-picker
+  .c-day-background {
+  background-color: transparent !important;
+  border: 3px solid $nude !important;
+}
+
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-confirm-booking
+  .am-add-coupon
+  .el-input-group__append {
+  background-color: $nude !important;
+  border-color: none !important;
+}
+
+// .am-calendar-picker div, .amelia-app-booking .am-step-booking-catalog .am-select-date .am-calendar-picker div {
+// color: white !important;
+// font-weight: 800 !important;
+// }
+
+.am-svg-wrapper {
+  display: none !important;
+}
+
+.redirect-link a {
+  color: white !important;
+}
+
+.el-input-group__append {
+  border-color: transparent !important;
+}
+
+.am-select-date-title {
+  display: block !important;
+}
+
+// .amelia-app-booking .am-step-booking-catalog .am-confirm-booking .el-row:nth-child(2), .am-add-coupon {
+//   display: none !important;
+// }
+
+.am-select-service-title {
+  display: none !important;
+}
+
+.am-confirmation-booking-header img {
+  display: none;
+}
+
+.am-custom-fields {
+  margin-top: 2rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2rem;
+  .el-row {
+    .el-col {
+      &:nth-child(5),
+      &:nth-child(6) {
+        border-top: 2px solid $black;
+        padding-top: 1.5rem;
+        @media only screen and (max-width: 800px) {
+          border: none;
+        }
+        &:nth-child(5) {
+          @media only screen and (max-width: 800px) {
+            border-top: 2px solid $black;
+          }
+        }
+      }
+    }
+  }
+  &:before {
+    content: "Let's take care of the legal stuff";
+    display: block;
+    top: 0;
+    left: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: $PTSerif;
+    margin-bottom: 1rem;
+    @media only screen and (max-width: 800px) {
+      margin-left: 0;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .el-row:first-child {
+    margin-top: 1.5rem;
+  }
+}
+
+.am-confirmation-booking-cost .el-row:nth-child(2),
+.am-add-coupon {
+  display: none;
+}
+
+.am-add-coupon {
+  display: none !important;
+}
+
+.am-confirmation-deposit {
+  display: block !important;
+}
+
+.amelia-app-booking #am-step-booking .am-select-service,
+.amelia-app-booking .am-step-booking-catalog .am-select-service {
+  // margin-top: 4rem !important;
+}
+
+// form.el-form--label-top {
+//     margin-top: 4rem !important;
+// }
+
+.am-active-picker form.el-form--label-top {
+  margin-top: 0rem !important;
+}
+
+.am-custom-fields {
+  border-top: 2px solid $black;
+  @media only screen and (max-width: 800px) {
+  }
+}
+
+.am-confirm-booking-payment {
+  border-top: 2px solid $black;
+  padding-top: 0;
+  margin-top: 0;
+  .el-col:first-child {
+    &:before {
+      content: "Payment Information";
+      display: block;
+      top: 0;
+      left: 0;
+      font-family: $PTSerif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      padding-top: 1.2rem;
+      @media only screen and (max-width: 800px) {
+        margin-left: 0;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.el-select-dropdown .el-select-dropdown__item:hover {
+  background-color: $nude !important;
+}
+
+.amelia-app-booking #am-step-booking .am-confirm-booking .am-employee-photo,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-confirm-booking
+  .am-employee-photo {
+  display: none !important;
+}
+
+label[for="serviceId"] {
+  margin-left: 5rem !important;
+  @media only screen and (max-width: 800px) {
+    margin-left: 6rem !important;
+  }
+}
+
+.amelia-app-booking
+  #am-step-booking
+  .am-confirm-booking
+  .am-custom-fields
+  .el-row
+  .el-upload-dragger,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-confirm-booking
+  .am-custom-fields
+  .el-row
+  .el-upload-dragger {
+  height: 85px !important;
+}
+
+.amelia-app-booking #am-step-booking .am-select-service .am-button-wrapper,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-select-service
+  .am-button-wrapper {
+  position: relative;
+}
+
+// .amelia-app-booking #am-step-booking .am-select-service .am-button-wrapper, .amelia-app-booking .am-step-booking-catalog .am-select-service .am-button-wrapper::before {
+//   content: 'Hair will ONLY be included for all box braid styles
+//             (Knotless, Goddess, & Traditional)';
+//   font-family: 'Roboto', 'sans-serif';
+//   font-size: 0.9rem;
+//   line-height: 18px;
+//   letter-spacing: 0.1px;
+//   display: block;
+//   margin-bottom: 6.5rem;
+//   margin-top: 1rem;
+// }
+
+// .amelia-app-booking #am-step-booking .am-select-service .am-button-wrapper, .amelia-app-booking .am-step-booking-catalog .am-select-service .am-button-wrapper::after {
+//   content: 'Standard Braid Size: Small/Medium' !important;
+//   font-family: 'Roboto', 'sans-serif';
+//   font-size: 0.9rem;
+//   line-height: 18px;
+//   letter-spacing: 0.1px;
+//   display: block;
+//   margin-bottom: 1rem;
+//   position: absolute;
+//   top: 100px;
+//      text-align: center;
+//      margin-left: 3rem;
+// }
+
+.am-cf-1 {
+  margin-top: 1rem;
+  @media only screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+}
+
+.am-custom-fields .el-row .el-col:nth-child(5) {
+  &::before {
+    content: "Anything else you'd like to tell me?";
+    font-family: $PTSerif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.4rem;
+    @media only screen and (max-width: 800px) {
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.am-custom-fields .el-row .el-col:nth-child(6) {
+}
+.am-cf-3 {
+  margin-top: 1.9rem;
+}
+
+.am-cf-12 {
+  margin-top: 6rem;
+}
+
+.amelia-app-booking
+  #am-step-booking
+  .am-select-date
+  .am-button-wrapper
+  .el-button,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-select-date
+  .am-button-wrapper
+  .el-button {
+  background-color: $black !important;
+  span {
+    color: $white !important;
+  }
+}
+
+.am-cf-1 {
+  margin-top: 3.3rem;
+  @media only screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+}
+
+.am-custom-fields .el-row .el-col:nth-child(4) {
+  margin-bottom: 1rem;
+}
+
+.amelia-app-booking
+  #am-step-booking
+  .am-confirm-booking
+  .am-confirm-booking-form
+  .am-confirm-booking-payment,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-confirm-booking
+  .am-confirm-booking-form
+  .am-confirm-booking-payment {
+  .el-col:nth-child(2) {
+    margin-top: 5.5rem;
+    @media only screen and (max-width: 800px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.el-form-item {
+  margin-bottom: 22px;
+}
+
+.amelia-app-booking .am-add-element i,
+.am-modal.am-in-body .am-add-element i {
+  color: $white !important;
+}
+
+.amelia-app-booking
+  #am-step-booking
+  .am-select-date
+  .am-button-wrapper
+  .el-button,
+.amelia-app-booking
+  .am-step-booking-catalog
+  .am-select-date
+  .am-button-wrapper
+  .el-button {
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.am-select-date {
+  margin-bottom: 0.5rem !important;
+  &::after {
+    content: "Selected time slot is approximation for your full service duration";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    margin-top: -3.5rem;
+    text-align: center;
+    @media only screen and (max-width: 800px) {
+      margin-top: -2.5rem;
+    }
+  }
+
+  .am-show-times .am-select-service-date-transition::after {
+    content: "Selected time slot is approximation for your full service duration";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    @media only screen and (max-width: 800px) {
+      margin-top: 4.5rem;
+      position: relative;
+      top: -21px;
+    }
+  }
+
+  .amelia-app-booking #am-step-booking.am-active-picker .am-select-date,
+  .amelia-app-booking
+    .am-step-booking-catalog.am-active-picker
+    .am-select-date {
+    margin-top: -5rem;
+  }
+
+  #amelia-app-booking0 {
+    @media only screen and (max-width: 800px) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .am-extras .el-col-7 {
+    display: none;
+  }
+
+  .am-extras .el-row:nth-child(2) .el-col:nth-child(1) {
+    display: none;
+  }
+
+  .am-confirmation-booking-cost .am-confirmation-extras-cost {
+    display: block !important;
+  }
+
+  .am-confirmation-booking-cost .el-row:nth-child(4) {
+    display: none;
+  }
+
+  .am-confirmation-booking .am-confirm-booking-form::after {
+    display: none !important;
+  }
+
+  .am-active-picker .el-form--label-top::after {
+    display: none !important;
+  }
+
+  // .el-form--label-top {
+  //   &::after {
+  //     content: 'Standard Length: Waist' !important;
+  //      display: block !important;
+  //      font-family: 'Roboto', 'sans-serif';
+  //      font-size: 0.9rem;
+  //      text-align: center;
+  //      margin-top: -7rem;
+  //   }
+}
+
+.am-active-picker .am-select-service-option {
+  &::before {
+    display: none !important;
+  }
+  &::after {
+    display: none !important;
+  }
+}
+
+.am-active-picker .am-add-element {
+  margin-top: 0;
+}
+
+.am-active-picker .am-extras div:first-child {
+  margin-top: 0rem !important;
+}
+
+.am-extras {
+  margin-top: 3rem;
+}
+
+.am-active-picker .am-extras {
+  margin-top: 0;
+}
+
+#amelia-step-booking0 {
+  padding: 4rem 0;
+}
+
+.am-flex-row-middle-align-mobile {
+  justify-content: center;
+}
+
+.amelia-app-booking #am-step-booking .am-confirm-booking .el-form-item,
+.amelia-app-booking .am-step-booking-catalog .am-confirm-booking .el-form-item {
+  @media only screen and (max-width: 800px) {
+    margin-top: 1rem;
+  }
+}
+
+.am-select-date::after {
+  @media only screen and (max-width: 800px) {
+    margin-top: -2.5rem !important;
+  }
+}
+
+#amelia-step-booking0 {
+  @media only screen and (max-width: 800px) {
+    margin-top: 4.5rem !important;
+  }
+}
+
+.am-extras .el-col:nth-child(2) {
+  display: none;
+}
+
+.am-extras .el-row:nth-child(2) .el-col .el-form-item {
+  display: none;
+}

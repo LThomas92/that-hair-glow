@@ -1,0 +1,435 @@
+.entry-title,
+.screen-reader-text,
+.post-edit-link {
+  display: none;
+}
+
+.home .entry-content h2 {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: $playFair;
+  font-size: 2.2rem;
+}
+
+//calendar styles
+
+.booked-calendar-wrap {
+  max-width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px #000;
+}
+
+// .booked-calendar-bg {
+//   background-color: rgba($nude, 0.8);
+// }
+
+// .booked-calendar {
+//   thead:first-child {
+//     background-color: $nude !important;
+//   }
+// }
+
+.monthName,
+.days th,
+.number,
+.backToMonth,
+.timeslot,
+.button-text {
+  font-family: $cicleGordita;
+}
+
+.booked-title-bar {
+  font-family: $cicleGordita;
+}
+
+.body .booked-modal .bm-window .close {
+  font-size: 12px;
+  top: 14px;
+}
+
+#newAppointmentForm p {
+  font-family: $cochin;
+}
+
+#newAppointmentForm .field-paid-service {
+  font-family: $cicleGordita;
+}
+
+//footer
+.that-hair-glow-footer-quote {
+  font-family: $cicleGordita;
+  font-size: 2.1rem;
+  text-align: center;
+  color: $white;
+  @media only screen and (max-width: 800px) {
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+  }
+}
+
+.that-hair-glow-footer-txt {
+  font-family: $cicleGordita;
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.address {
+  font-family: $cicleGordita;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.new-appt,
+#submit-request-appointment,
+.cancel {
+  cursor: pointer;
+}
+
+.field-label,
+.checkbox-radio-block {
+  font-family: $cicleGordita;
+}
+
+.booked-calendar-fields::after {
+  content: "Please note: A $25.00 deposit is required prior to booking your appointment";
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: $cicleGordita;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+//woocommerce checkout fields
+.woocommerce-checkout {
+  max-width: 1024px;
+  margin: 0 auto;
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    padding: 0.3rem 0.9rem;
+    outline: none;
+    border: 1px solid $nude;
+    font-family: $cicleGordita;
+  }
+}
+
+.woocommerce-billing-fields {
+  h3 {
+    font-family: $cochin;
+  }
+}
+
+.woocommerce-billing-fields__field-wrapper {
+  label {
+    font-family: $cochin;
+  }
+}
+
+#select2-billing_country-container,
+#select2-billing_state-container {
+  font-family: $cicleGordita;
+}
+
+#order_review_heading {
+  font-family: $cochin;
+  margin-bottom: 0.7rem;
+}
+
+.product-name,
+.product-total,
+.cart-subtotal,
+.order-total,
+.order-paid,
+.order-remaining {
+  font-family: $cochin;
+}
+
+.variation-DepositAmount {
+  font-weight: 700;
+}
+
+#place_order {
+  background-color: $black;
+  font-family: $cicleGordita;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0;
+  @media only screen and (max-width: 800px) {
+    margin-top: 2rem;
+  }
+  &:hover {
+    background-color: #216c2a !important;
+    transition: al ease-in 3s;
+  }
+}
+
+.wc_payment_methods,
+.woocommerce-privacy-policy-text {
+  font-family: $cicleGordita;
+}
+
+.woocommerce-additional-fields h3,
+#order_comments_field label {
+  font-family: $cicleGordita;
+}
+
+#order_comments {
+  font-family: $cicleGordita;
+  padding: 0 0.2rem;
+}
+
+.about_paypal {
+  font-family: $cicleGordita;
+}
+
+//woocommerce order recv'd
+.woocommerce-order {
+  max-width: 1024px;
+  margin: 0 auto;
+  @media only screen and (max-width: 800px) {
+    max-width: 90%;
+  }
+  .woocommerce-thankyou-order-received {
+    font-family: $cicleGordita;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.9rem;
+    display: block;
+  }
+  .woocommerce-thankyou-order-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+    li {
+      font-family: $cicleGordita;
+      @media only screen and (max-width: 800px) {
+        border-right: none !important;
+        margin: 0.2rem 0;
+      }
+    }
+  }
+}
+
+.woocommerce-order-details__title,
+.woocommerce-column__title {
+  font-family: $cochin;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  @media only screen and (max-width: 800px) {
+  }
+}
+
+.woocommerce-table--order-details {
+  font-family: $cochin;
+  @media only screen and (max-width: 800px) {
+  }
+}
+
+.woocommerce_deposits_parent_order_summary {
+  width: 100%;
+  font-family: $cochin;
+  margin: 1.2rem 0;
+  @media only screen and (max-width: 800px) {
+  }
+  thead {
+    text-align: left;
+  }
+  .order_item {
+    text-align: left;
+  }
+}
+
+address {
+  font-family: $cicleGordita;
+}
+
+// .woocommerce-order p:nth-child(2) {
+//   font-family: $cicleGordita;
+//   font-weight: 800;
+//   border-bottom: 1.2px solid $nude;
+//   padding-bottom: 1rem;
+// }
+
+.woocommerce {
+  padding-top: 2rem;
+  @media only screen and (max-width: 800px) {
+    padding: 0 2rem;
+    padding-top: 2rem;
+  }
+}
+
+.woocommerce-info {
+  display: none;
+}
+
+.sm-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  @media only screen and (max-width: 767px) {
+    margin-bottom: -4rem;
+  }
+}
+
+.instagram-icon {
+  height: 2.4rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  transition: all 3s ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.email-icon {
+  height: 2.4rem;
+  cursor: pointer;
+  transition: all 3s ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.facebook-icon {
+  height: 2.4rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+  transition: all 3s ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.meta-text {
+  position: relative;
+}
+
+.header-nav {
+  background-color: $white;
+  color: $black;
+  font-family: $monseratt;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+  @media only screen and (max-width: 800px) {
+    padding-left: 0;
+    font-size: 0.6rem;
+    padding-bottom: 0.2rem;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    li {
+      margin-right: 1.2rem;
+      cursor: pointer;
+      @media only screen and (max-width: 800px) {
+        margin-bottom: 1.8rem;
+      }
+      li:last-child {
+        margin-bottom: 0.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        transition: all 300ms ease-in;
+        border: 2px solid black;
+        padding: 0.3rem;
+        border-radius: 3px;
+        &:hover {
+          color: $nude;
+        }
+      }
+    }
+  }
+}
+
+.entry-footer {
+  @media only screen and (max-width: 800px) {
+    margin-top: -4rem;
+  }
+}
+
+#amelia-app-booking0 {
+  @media only screen and (max-width: 800px) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// .addtional-info-text {
+//   position: absolute;
+//   bottom: 50%;
+//   left: 50%;
+//   p {
+//     font-family: 'Roboto', 'sans-serif';
+//     font-size: 0.8rem;
+//     margin-top: 0.8rem;
+//     margin-left: -2rem;
+//     text-align: center;
+//     display: block;
+//     text-align: center;
+//   }
+// }
+
+.am-button-wrapper {
+  padding-bottom: 4rem;
+}
+
+.am-button-wrapper {
+  margin-top: 4rem;
+  &::before {
+    content: "Standard Length: Waist || Braid Size: Small/Med";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  &:after {
+    content: "Hair will ONLY be included for all box braid styles (Knotless, Goddess, Traditional, etc.)";
+    display: block;
+    font-family: "Roboto", "sans-serif";
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -8rem;
+  }
+}
+
+#amelia-step-booking0 {
+  position: relative;
+}
+
+.am-active-picker .am-button-wrapper::before {
+  display: none;
+}
+
+.am-active-picker .am-button-wrapper::after {
+  display: none;
+}
+
+.am-confirmation-booking-header h2::after {
+  content: "Natural hair MUST be completely clean, blow-dried/stretched, tangle free, and have zero products";
+  display: block;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
