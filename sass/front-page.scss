@@ -252,13 +252,6 @@ address {
   font-family: $cicleGordita;
 }
 
-// .woocommerce-order p:nth-child(2) {
-//   font-family: $cicleGordita;
-//   font-weight: 800;
-//   border-bottom: 1.2px solid $nude;
-//   padding-bottom: 1rem;
-// }
-
 .woocommerce {
   padding-top: 2rem;
   @media only screen and (max-width: 800px) {
@@ -280,24 +273,27 @@ address {
   @media only screen and (max-width: 767px) {
     margin-bottom: -4rem;
   }
+
 }
 
 .instagram-icon {
   height: 2.4rem;
   cursor: pointer;
   margin-left: 1.5rem;
-  transition: all 3s ease-in;
+  transition: 300ms;
   &:hover {
     opacity: 0.7;
+	transform: rotate(5deg);
   }
 }
 
 .email-icon {
   height: 2.4rem;
   cursor: pointer;
-  transition: all 3s ease-in;
+  transition: 300ms;
   &:hover {
     opacity: 0.7;
+	transform: rotate(5deg);
   }
 }
 
@@ -305,9 +301,10 @@ address {
   height: 2.4rem;
   cursor: pointer;
   margin-left: 1.5rem;
-  transition: all 3s ease-in;
+  transition: 300ms;
   &:hover {
     opacity: 0.7;
+	transform: rotate(5deg);
   }
 }
 
@@ -373,43 +370,12 @@ address {
   }
 }
 
-// .addtional-info-text {
-//   position: absolute;
-//   bottom: 50%;
-//   left: 50%;
-//   p {
-//     font-family: 'Roboto', 'sans-serif';
-//     font-size: 0.8rem;
-//     margin-top: 0.8rem;
-//     margin-left: -2rem;
-//     text-align: center;
-//     display: block;
-//     text-align: center;
-//   }
-// }
-
 .am-button-wrapper {
   padding-bottom: 4rem;
 }
 
 .am-button-wrapper {
-  margin-top: 4rem;
-  &::before {
-    content: "Standard Length: Waist || Braid Size: Small/Med";
-    display: block;
-    font-family: "Roboto", "sans-serif";
-    font-size: 0.8rem;
-    text-align: center;
-    margin-bottom: 6rem;
-  }
-  &:after {
-    content: "Hair will ONLY be included for all box braid styles (Knotless, Goddess, Traditional, etc.)";
-    display: block;
-    font-family: "Roboto", "sans-serif";
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: -8rem;
-  }
+  margin-bottom: 4rem;
 }
 
 #amelia-step-booking0 {
@@ -425,7 +391,7 @@ address {
 }
 
 .am-confirmation-booking-header h2::after {
-  content: "Natural hair MUST be completely clean, blow-dried/stretched, tangle free, and have zero products";
+  content: "Natural hair MUST be clean, blow dried/stretched, tangle-free, & have zero products";
   display: block;
   font-family: "Roboto", "sans-serif";
   font-size: 1.1rem;

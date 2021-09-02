@@ -11,49 +11,25 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<?php 
+			$title = get_field('title', 'option' );
+			$text = get_field('content', 'option');
+			$link = get_field('link', 'option');
+		?>
 
 		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'that-hair-glow' ); ?></h1>
-			</header><!-- .page-header -->
+			<div class="error-404__content">
+			<h1 class="error-404__title"><?php echo $title; ?></h1>
+			<div class="error-404__text">
+			<?php echo $text; ?>
+			</div>
+			<a class="error-404__link" href="<?php echo $link['url']; ?>"><?php echo $link['title']?></a>
+			</div><!-- error 404 content -->
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'that-hair-glow' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'that-hair-glow' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$that_hair_glow_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'that-hair-glow' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$that_hair_glow_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
+			<div class="error-404__question">
+			<h2 class="error-404__question-mark">?</h2>
+			</div>
 		</section><!-- .error-404 -->
-
 	</main><!-- #main -->
 
 <?php

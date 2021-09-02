@@ -1,7 +1,9 @@
 <?php if( have_rows('about_slideshow') ): ?>
     <div class="abt-slideshow-block__slides">
     <?php while( have_rows('about_slideshow') ) : the_row();
-        $text = get_sub_field('text'); ?>
+        $text = get_sub_field('text'); 
+		$image = get_sub_field('image');
+		?>
         <div class="abt-slideshow-block__slide">
         <p><?php echo $text; ?></p>
         <div class="abt-slideshow-block__controls">

@@ -1,0 +1,182 @@
+.page-template-template-giveaway {
+    background-color: rgba($brown, 0.9);
+    #gform_wrapper_2 {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 6rem;
+        padding: 2.5rem 0;
+        background-color: $white;
+        border-radius: 4px;
+        position: relative;
+        box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+        text-align: center;
+        @media only screen and (max-width: 800px) {
+            max-width: 80%;
+          }
+        &::before {
+            content: '';
+            background-color: $nude;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: -5%;
+            left: -9%;
+            z-index: -1;
+            border-radius: 4px;
+            @media only screen and (max-width: 800px) {
+                width: 90%;
+                left: 17%;
+              }
+        }
+        .gform_title {
+            font-family: $monseratt;
+            text-align: center;
+            margin-bottom: 3.2rem;
+            position: relative;
+            &::before {
+                content: '';
+                background-color: $brown;
+                display: block;
+                width: 20%;
+                height: 1.5px;
+                position: absolute;
+                top: 140%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+            }
+        }
+        .gform_description {
+            display: block;
+            margin-top: 1.2rem;
+            margin-bottom: 4.5rem;
+            text-align: center;
+            p {
+                font-family: $monseratt;
+                font-size: 0.9rem;
+                line-height: 1;
+                margin-bottom: 0.9rem;
+            }
+            h3 {
+                font-family: $monseratt;
+                font-weight: 500;
+                font-style: italic;
+                @media only screen and (max-width: 800px) {
+                    font-size: 1rem;
+                  }
+            }
+        }
+        .gform_heading {
+            padding: 0 4rem;
+            @media only screen and (max-width: 800px) {
+                padding: 0 1.5rem;
+              }
+        }
+        #gform_fields_2 {
+            padding: 0 4rem;
+            @media only screen and (max-width: 800px) {
+                padding: 0 1.5rem;
+              }
+        }
+        .gfield_label {
+            font-family: $monseratt;
+            font-size: 0.9rem;
+            line-height: 0.7;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 1.4rem;
+        }
+        input[type="text"] {
+            outline: none;
+            border: none;
+            font-family: $monseratt;
+            font-size: 1rem;
+            border-radius: 3px;
+            width: 50%;
+            padding: 1.2rem 1.7rem;
+            border: 1.5px solid $nude;
+            @media only screen and (max-width: 800px) {
+                width: 100%;
+                padding: 0.9rem 1.2rem;
+              }
+        }
+        .gform_footer {
+            text-align: center;
+        }
+        .gform_button {
+            padding: 0.9rem 1.2rem;
+            cursor: pointer;
+            background-color: transparent;
+            color: $black;
+            border: 1px solid $nude;
+            border-radius: 3px;
+            font-family: $monseratt;
+            &:hover {
+                transition: all 300ms ease-in;
+                background-color: $nude;
+                color: $white;
+            }
+        }
+        .ginput_container_text {
+            margin-bottom: 1.5rem;
+        }
+        .gform_submission_error {
+            font-family: $monseratt;
+        }
+        .gfield--width-full {
+            img {
+                height: 4rem;
+                object-fit: cover;
+                margin-bottom: 1.2rem;
+            }
+        }
+        #field_2_4 {
+            margin: 0 auto;
+        }
+        #gform_confirmation_message_2 {
+            font-family: $monseratt;
+            text-align: center;
+            color: $white;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+#gform_confirmation_wrapper_2 {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding: 4.5rem 0;
+    background-color: $white;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    font-family: $monseratt;
+    @media only screen and (max-width: 800px) {
+        max-width: 70%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    &::before {
+        content: '';
+        background-color: $nude;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: -5%;
+        left: -9%;
+        z-index: -1;
+        border-radius: 4px;
+        @media only screen and (max-width: 800px) {
+            width: 90%;
+            left: 17%;
+          }
+    }
+}
+
+// HIDE FORM 
+#gform_2{
+	display: none;
+}

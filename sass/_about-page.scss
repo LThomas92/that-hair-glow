@@ -46,6 +46,10 @@
       display: block;
       background: $white;
       margin-left: -30rem;
+      @media only screen and (max-width: 800px) {
+        margin-left: -17px;
+        width: 1.5px;
+      }
     }
   }
 }

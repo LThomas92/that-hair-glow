@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Template Faqs
- * The template for displaying Template Faqs
+ * Template Name: Template Hair Care Guide 2
+ * The template for displaying Hair Care Guide 2
  *
  * @link
  *

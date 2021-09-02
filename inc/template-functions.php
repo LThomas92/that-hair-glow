@@ -36,6 +36,12 @@ function that_hair_glow_pingback_header() {
 }
 add_action( 'wp_head', 'that_hair_glow_pingback_header' );
 
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
 //Custom ACF Gutenberg Blocks
 
 function about_slideshow() {
@@ -77,3 +83,24 @@ function faq_circle() {
 }
 
 add_action('acf/init', 'faq_circle');
+
+function accordion_block() {
+
+// check function exists
+if( function_exists('acf_register_block') ) {
+
+	// register a portfolio item block
+	acf_register_block(array(
+		'name'				=> 'accordion',
+		'title'				=> __('Accordion Block'),
+		'description'		=> __('A custom block for accoridon items.'),
+		'render_template'	=> 'template-parts/blocks/accordion-block.php',
+		'category'			=> 'layout',
+		'icon'				=> 'excerpt-view',
+		'keywords'			=> array( 'accordion, faqs, faq, question, answer, that hair glow'),
+	));
+}
+}
+
+add_action('acf/init', 'accordion_block');
+

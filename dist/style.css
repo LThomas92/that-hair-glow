@@ -95,8 +95,7 @@ a {
 .am-select-date
 .am-calendar-picker
 .c-day-background {
-  background-color: transparent !important;
-  border: 3px solid #c79b7e !important; }
+  color: #fff !important; }
 
 .amelia-app-booking
 .am-step-booking-catalog
@@ -128,32 +127,6 @@ a {
   margin-top: 2rem;
   padding-bottom: 1.2rem;
   margin-bottom: 2rem; }
-  .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
-    border-top: 2px solid #000;
-    padding-top: 1.5rem; }
-    @media only screen and (max-width: 800px) {
-      .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
-        border: none; } }
-    @media only screen and (max-width: 800px) {
-      .am-custom-fields .el-row .el-col:nth-child(5):nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6):nth-child(5) {
-        border-top: 2px solid #000; } }
-  .am-custom-fields:before {
-    content: "Let's take care of the legal stuff";
-    display: block;
-    top: 0;
-    left: 0;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: "PT Serif", serif;
-    margin-bottom: 1rem; }
-    @media only screen and (max-width: 800px) {
-      .am-custom-fields:before {
-        margin-left: 0;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        margin-bottom: 2rem; } }
   .am-custom-fields .el-row:first-child {
     margin-top: 1.5rem; }
 
@@ -204,9 +177,6 @@ a {
 
 label[for="serviceId"] {
   margin-left: 5rem !important; }
-  @media only screen and (max-width: 800px) {
-    label[for="serviceId"] {
-      margin-left: 6rem !important; } }
 
 .amelia-app-booking
 #am-step-booking
@@ -235,23 +205,8 @@ label[for="serviceId"] {
     .am-cf-1 {
       margin-top: 0; } }
 
-.am-custom-fields .el-row .el-col:nth-child(5)::before {
-  content: "Anything else you'd like to tell me?";
-  font-family: "PT Serif", serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 1.4rem; }
-  @media only screen and (max-width: 800px) {
-    .am-custom-fields .el-row .el-col:nth-child(5)::before {
-      margin-left: 0;
-      font-size: 1.2rem; } }
-
 .am-cf-3 {
   margin-top: 1.9rem; }
-
-.am-cf-12 {
-  margin-top: 6rem; }
 
 .amelia-app-booking
 #am-step-booking
@@ -275,12 +230,6 @@ label[for="serviceId"] {
 .am-button-wrapper
 .el-button span {
     color: #fff !important; }
-
-.am-cf-1 {
-  margin-top: 3.3rem; }
-  @media only screen and (max-width: 800px) {
-    .am-cf-1 {
-      margin-top: 0; } }
 
 .am-custom-fields .el-row .el-col:nth-child(4) {
   margin-bottom: 1rem; }
@@ -391,6 +340,9 @@ label[for="serviceId"] {
 
 .am-extras {
   margin-top: 3rem; }
+  @media only screen and (max-width: 800px) {
+    .am-extras {
+      margin-top: 0; } }
 
 .am-active-picker .am-extras {
   margin-top: 0; }
@@ -419,6 +371,15 @@ label[for="serviceId"] {
 
 .am-extras .el-row:nth-child(2) .el-col .el-form-item {
   display: none; }
+
+.am-cf-6 {
+  margin-top: 1rem; }
+
+.am-select-service {
+  margin-top: 4rem; }
+
+.am-active-picker .am-select-service {
+  margin-top: 0; }
 
 .entry-title,
 .screen-reader-text,
@@ -635,24 +596,27 @@ address {
   height: 2.4rem;
   cursor: pointer;
   margin-left: 1.5rem;
-  transition: all 3s ease-in; }
+  transition: 300ms; }
   .instagram-icon:hover {
-    opacity: 0.7; }
+    opacity: 0.7;
+    transform: rotate(5deg); }
 
 .email-icon {
   height: 2.4rem;
   cursor: pointer;
-  transition: all 3s ease-in; }
+  transition: 300ms; }
   .email-icon:hover {
-    opacity: 0.7; }
+    opacity: 0.7;
+    transform: rotate(5deg); }
 
 .facebook-icon {
   height: 2.4rem;
   cursor: pointer;
   margin-left: 1.5rem;
-  transition: all 3s ease-in; }
+  transition: 300ms; }
   .facebook-icon:hover {
-    opacity: 0.7; }
+    opacity: 0.7;
+    transform: rotate(5deg); }
 
 .meta-text {
   position: relative; }
@@ -709,21 +673,7 @@ address {
   padding-bottom: 4rem; }
 
 .am-button-wrapper {
-  margin-top: 4rem; }
-  .am-button-wrapper::before {
-    content: "Standard Length: Waist || Braid Size: Small/Med";
-    display: block;
-    font-family: "Roboto", "sans-serif";
-    font-size: 0.8rem;
-    text-align: center;
-    margin-bottom: 6rem; }
-  .am-button-wrapper:after {
-    content: "Hair will ONLY be included for all box braid styles (Knotless, Goddess, Traditional, etc.)";
-    display: block;
-    font-family: "Roboto", "sans-serif";
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: -8rem; }
+  margin-bottom: 4rem; }
 
 #amelia-step-booking0 {
   position: relative; }
@@ -735,7 +685,7 @@ address {
   display: none; }
 
 .am-confirmation-booking-header h2::after {
-  content: "Natural hair MUST be completely clean, blow-dried/stretched, tangle free, and have zero products";
+  content: "Natural hair MUST be clean, blow dried/stretched, tangle-free, & have zero products";
   display: block;
   font-family: "Roboto", "sans-serif";
   font-size: 1.1rem;
@@ -776,8 +726,7 @@ address {
 .am-select-date
 .am-calendar-picker
 .c-day-background {
-  background-color: transparent !important;
-  border: 3px solid #c79b7e !important; }
+  color: #fff !important; }
 
 .amelia-app-booking
 .am-step-booking-catalog
@@ -809,32 +758,6 @@ address {
   margin-top: 2rem;
   padding-bottom: 1.2rem;
   margin-bottom: 2rem; }
-  .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
-    border-top: 2px solid #000;
-    padding-top: 1.5rem; }
-    @media only screen and (max-width: 800px) {
-      .am-custom-fields .el-row .el-col:nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6) {
-        border: none; } }
-    @media only screen and (max-width: 800px) {
-      .am-custom-fields .el-row .el-col:nth-child(5):nth-child(5), .am-custom-fields .el-row .el-col:nth-child(6):nth-child(5) {
-        border-top: 2px solid #000; } }
-  .am-custom-fields:before {
-    content: "Let's take care of the legal stuff";
-    display: block;
-    top: 0;
-    left: 0;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: "PT Serif", serif;
-    margin-bottom: 1rem; }
-    @media only screen and (max-width: 800px) {
-      .am-custom-fields:before {
-        margin-left: 0;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        margin-bottom: 2rem; } }
   .am-custom-fields .el-row:first-child {
     margin-top: 1.5rem; }
 
@@ -885,9 +808,6 @@ address {
 
 label[for="serviceId"] {
   margin-left: 5rem !important; }
-  @media only screen and (max-width: 800px) {
-    label[for="serviceId"] {
-      margin-left: 6rem !important; } }
 
 .amelia-app-booking
 #am-step-booking
@@ -916,23 +836,8 @@ label[for="serviceId"] {
     .am-cf-1 {
       margin-top: 0; } }
 
-.am-custom-fields .el-row .el-col:nth-child(5)::before {
-  content: "Anything else you'd like to tell me?";
-  font-family: "PT Serif", serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 1.4rem; }
-  @media only screen and (max-width: 800px) {
-    .am-custom-fields .el-row .el-col:nth-child(5)::before {
-      margin-left: 0;
-      font-size: 1.2rem; } }
-
 .am-cf-3 {
   margin-top: 1.9rem; }
-
-.am-cf-12 {
-  margin-top: 6rem; }
 
 .amelia-app-booking
 #am-step-booking
@@ -956,12 +861,6 @@ label[for="serviceId"] {
 .am-button-wrapper
 .el-button span {
     color: #fff !important; }
-
-.am-cf-1 {
-  margin-top: 3.3rem; }
-  @media only screen and (max-width: 800px) {
-    .am-cf-1 {
-      margin-top: 0; } }
 
 .am-custom-fields .el-row .el-col:nth-child(4) {
   margin-bottom: 1rem; }
@@ -1072,6 +971,9 @@ label[for="serviceId"] {
 
 .am-extras {
   margin-top: 3rem; }
+  @media only screen and (max-width: 800px) {
+    .am-extras {
+      margin-top: 0; } }
 
 .am-active-picker .am-extras {
   margin-top: 0; }
@@ -1101,8 +1003,37 @@ label[for="serviceId"] {
 .am-extras .el-row:nth-child(2) .el-col .el-form-item {
   display: none; }
 
+.am-cf-6 {
+  margin-top: 1rem; }
+
+.am-select-service {
+  margin-top: 4rem; }
+
+.am-active-picker .am-select-service {
+  margin-top: 0; }
+
+.page-template-terms-conditions {
+  background-color: #fff; }
+  .page-template-terms-conditions .that-hair-glow-footer-quote {
+    color: #c79b7e; }
+  .page-template-terms-conditions .footer-nav ul li a {
+    color: #000; }
+    .page-template-terms-conditions .footer-nav ul li a:hover {
+      transition: all 300ms ease-in;
+      color: #c79b7e; }
+
 .terms-conditions {
   padding: 0 10rem; }
+  .terms-conditions::before {
+    content: "";
+    width: 100vw;
+    height: calc(100% + 25vh);
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: calc(50% - 50vw);
+    background-color: #c79b7e; }
   @media only screen and (max-width: 800px) {
     .terms-conditions {
       padding: 0 2rem; } }
@@ -1138,16 +1069,6 @@ label[for="serviceId"] {
     position: relative;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 4px; }
-    .terms-conditions__wrapper::before {
-      content: "";
-      width: 100vw;
-      height: calc(100% - 45rem);
-      display: block;
-      background-color: #fff;
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      left: calc(50% - 50vw); }
     .terms-conditions__wrapper h1,
     .terms-conditions__wrapper h2,
     .terms-conditions__wrapper h3,
@@ -1155,10 +1076,12 @@ label[for="serviceId"] {
     .terms-conditions__wrapper h5,
     .terms-conditions__wrapper h6 {
       line-height: 1;
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      color: #000; }
     .terms-conditions__wrapper p {
       font-size: 1rem;
-      font-weight: 200; }
+      font-weight: 350;
+      color: #000; }
       @media only screen and (max-width: 800px) {
         .terms-conditions__wrapper p {
           font-size: 0.8rem; } }
@@ -1169,80 +1092,40 @@ label[for="serviceId"] {
 .page-template-terms-conditions .header-nav {
   border-bottom: 1px solid #c79b7e; }
 
-.faqs__title {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  font-weight: 300;
-  text-align: center;
-  margin: 2rem 0; }
+.page-template-template-faqs {
+  background-color: #c79b7e; }
+  .page-template-template-faqs .header-nav {
+    border: 1.5px solid #c79b7e; }
 
-.faqs .faq-circles {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  align-content: center;
-  margin-top: 6rem; }
-
-.scene {
-  width: 16vw;
-  height: 16vw;
-  margin: 40px 0;
-  perspective: 600px;
-  margin-right: 2rem; }
-  .scene:nth-child(even) {
-    margin-top: -4rem; }
-
-.card {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  border-radius: 50%; }
-
-.card.is-flipped {
-  transform: rotateY(180deg); }
-
-.card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: #000;
-  text-align: center;
-  font-size: 1rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 50%;
-  text-align: center; }
-
-.card__face--front {
-  background: #fff; }
-  .card__face--front p {
-    font-size: 1.1rem;
+.faqs {
+  background-color: #c79b7e; }
+  .faqs__title {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
     font-weight: 300;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-
-.card__face--back {
-  background: #fff;
-  transform: rotateY(180deg); }
-  .card__face--back p {
-    font-size: 0.6rem;
-    font-weight: 300;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    margin-bottom: 1rem; }
+    text-align: center;
+    margin: 4rem 0;
+    position: relative; }
+    @media only screen and (max-width: 800px) {
+      .faqs__title {
+        font-size: 1.2rem !important; } }
+    .faqs__title:before {
+      content: '';
+      background-color: #fff;
+      background-position: center center;
+      width: 20%;
+      height: 1.5px;
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translate(-50%, 50%); }
+      @media only screen and (max-width: 800px) {
+        .faqs__title:before {
+          width: 40%; } }
+    @media only screen and (max-width: 800px) {
+      .faqs__title {
+        font-size: 1.5rem; } }
 
 .arrow-thin {
   position: absolute;
@@ -1320,6 +1203,235 @@ label[for="serviceId"] {
           line-height: 1.4;
           padding: 1.2rem 0; } }
 
+#accordion {
+  max-width: 1024px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 800px) {
+    #accordion {
+      max-width: 100%; } }
+  #accordion__arrow {
+    width: 30px;
+    height: 25px;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(90deg); }
+    @media only screen and (max-width: 800px) {
+      #accordion__arrow {
+        width: 25px;
+        height: 20px; } }
+
+.accordion-container .accordion-title {
+  position: relative;
+  margin: 0;
+  padding: 1.5rem 1.7rem;
+  font-size: 1.25em;
+  font-weight: normal;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  border-radius: 3px; }
+  @media only screen and (max-width: 800px) {
+    .accordion-container .accordion-title {
+      font-size: 0.9rem;
+      padding: 1.5rem 0.5rem;
+      text-align: center; } }
+  @media only screen and (max-width: 800px) {
+    .accordion-container .accordion-title span {
+      margin-right: 1rem; } }
+
+.accordion-title:hover {
+  transition: all 300ms ease-in;
+  color: #fff; }
+
+.accordion-container .accordion-title.open #accordion__arrow {
+  transform: rotate(-90deg); }
+
+.accordion-content {
+  padding: 1.5rem 3rem;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  display: flex; }
+  @media only screen and (max-width: 800px) {
+    .accordion-content {
+      padding: 1rem 1.5rem; } }
+  .accordion-content__letter {
+    margin-right: 1rem; }
+
+.accordion-color-0, .accordion-color-2, .accordion-color-4, .accordion-color-6, .accordion-color-8 {
+  background-color: #7c5046;
+  color: #fff !important;
+  border: 3px solid #fff; }
+  .accordion-color-0:hover, .accordion-color-2:hover, .accordion-color-4:hover, .accordion-color-6:hover, .accordion-color-8:hover {
+    transition: all 300ms ease-in;
+    color: #000 !important; }
+
+.accordion-color-1, .accordion-color-3, .accordion-color-5, .accordion-color-7 {
+  background-color: #fff;
+  border: 3px solid #7c5046;
+  color: #7c5046 !important; }
+  .accordion-color-1:hover, .accordion-color-3:hover, .accordion-color-5:hover, .accordion-color-7:hover {
+    transition: all 300ms ease-in;
+    color: #000 !important; }
+
+.arrow-color-1 path, .arrow-color-3 path, .arrow-color-5 path, .arrow-color-7 path {
+  fill: #000; }
+
+.hair-care-guide {
+  width: 100%; }
+  .hair-care-guide__title {
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    line-height: 1;
+    letter-spacing: 0.56px;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    position: relative; }
+    .hair-care-guide__title::after {
+      content: '';
+      background-color: #7c5046;
+      width: 20%;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 132%;
+      left: 50%;
+      transform: translate(-50%, 50%); }
+      @media only screen and (max-width: 800px) {
+        .hair-care-guide__title::after {
+          width: 35%; } }
+    @media only screen and (max-width: 800px) {
+      .hair-care-guide__title {
+        margin-bottom: 2.5rem;
+        font-size: 1.2rem; } }
+
+.hair-care-guide-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem; }
+  @media only screen and (max-width: 1300px) {
+    .hair-care-guide-container {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media only screen and (max-width: 800px) {
+    .hair-care-guide-container {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5rem; } }
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  cursor: pointer;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); }
+  .flip-card__front-arrow {
+    margin-top: 1.5rem;
+    height: 2rem; }
+    @media only screen and (max-width: 800px) {
+      .flip-card__front-arrow {
+        margin-top: 1rem;
+        height: 1rem; } }
+  .flip-card__back-arrow {
+    margin-top: 1.5rem;
+    height: 2rem;
+    transform: scale(-1, 1); }
+    @media only screen and (max-width: 800px) {
+      .flip-card__back-arrow {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: 1rem; } }
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipped {
+  transform: rotateY(180deg); }
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden; }
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black; }
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg); }
+
+.flip-card-bg-0, .flip-card-bg-3, .flip-card-bg-6 {
+  background-color: rgba(124, 80, 70, 0.4);
+  color: #fff; }
+  .flip-card-bg-0:hover, .flip-card-bg-3:hover, .flip-card-bg-6:hover {
+    color: #000;
+    transition: all 300ms ease-in; }
+
+.flip-card-bg-1, .flip-card-bg-4 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff; }
+  .flip-card-bg-1:hover, .flip-card-bg-4:hover {
+    color: #c79b7e;
+    transition: all 300ms ease-in; }
+
+.flip-card-bg-2, .flip-card-bg-5, .flip-card-bg-7 {
+  background-color: #fff;
+  color: #000; }
+  .flip-card-bg-2:hover, .flip-card-bg-5:hover, .flip-card-bg-7:hover {
+    color: #7c5046;
+    transition: all 300ms ease-in; }
+
+.flip-card__icon img {
+  height: 4rem;
+  object-fit: cover;
+  margin-top: 5.5rem; }
+  @media only screen and (max-width: 800px) {
+    .flip-card__icon img {
+      height: 2rem;
+      margin-top: 1.5rem; } }
+
+.flip-card__question {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+  @media only screen and (max-width: 800px) {
+    .flip-card__question {
+      margin-top: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 0.7rem; } }
+
+.flip-card__answer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  display: block;
+  padding: 2.5rem 1rem; }
+  @media only screen and (max-width: 800px) {
+    .flip-card__answer {
+      padding: 0.7rem 0.5rem;
+      font-size: 0.6rem; } }
+
 .about-page {
   margin-bottom: 2rem; }
   .about-page__title {
@@ -1366,8 +1478,347 @@ label[for="serviceId"] {
       display: block;
       background: #fff;
       margin-left: -30rem; }
+      @media only screen and (max-width: 800px) {
+        .about-page__content::before {
+          margin-left: -17px;
+          width: 1.5px; } }
 
 footer {
   margin-top: 2rem; }
+
+.copyright-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 18px;
+  text-align: center;
+  margin: 1.1rem 0;
+  display: block; }
+  @media only screen and (max-width: 800px) {
+    .copyright-text {
+      margin-top: 5rem;
+      font-size: 0.8rem; } }
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1.5rem; }
+  .footer-nav ul li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 0.9;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-position: under; }
+    .footer-nav ul li a:hover {
+      transition: all 300ms ease-in;
+      color: #000; }
+
+.page-template-template-giveaway {
+  background-color: rgba(124, 80, 70, 0.9); }
+  .page-template-template-giveaway #gform_wrapper_2 {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding: 2.5rem 0;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .page-template-template-giveaway #gform_wrapper_2 {
+        max-width: 80%; } }
+    .page-template-template-giveaway #gform_wrapper_2::before {
+      content: '';
+      background-color: #c79b7e;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: -5%;
+      left: -9%;
+      z-index: -1;
+      border-radius: 4px; }
+      @media only screen and (max-width: 800px) {
+        .page-template-template-giveaway #gform_wrapper_2::before {
+          width: 90%;
+          left: 17%; } }
+    .page-template-template-giveaway #gform_wrapper_2 .gform_title {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin-bottom: 3.2rem;
+      position: relative; }
+      .page-template-template-giveaway #gform_wrapper_2 .gform_title::before {
+        content: '';
+        background-color: #7c5046;
+        display: block;
+        width: 20%;
+        height: 1.5px;
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translate(-50%, 50%); }
+    .page-template-template-giveaway #gform_wrapper_2 .gform_description {
+      display: block;
+      margin-top: 1.2rem;
+      margin-bottom: 4.5rem;
+      text-align: center; }
+      .page-template-template-giveaway #gform_wrapper_2 .gform_description p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.9rem;
+        line-height: 1;
+        margin-bottom: 0.9rem; }
+      .page-template-template-giveaway #gform_wrapper_2 .gform_description h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-style: italic; }
+        @media only screen and (max-width: 800px) {
+          .page-template-template-giveaway #gform_wrapper_2 .gform_description h3 {
+            font-size: 1rem; } }
+    .page-template-template-giveaway #gform_wrapper_2 .gform_heading {
+      padding: 0 4rem; }
+      @media only screen and (max-width: 800px) {
+        .page-template-template-giveaway #gform_wrapper_2 .gform_heading {
+          padding: 0 1.5rem; } }
+    .page-template-template-giveaway #gform_wrapper_2 #gform_fields_2 {
+      padding: 0 4rem; }
+      @media only screen and (max-width: 800px) {
+        .page-template-template-giveaway #gform_wrapper_2 #gform_fields_2 {
+          padding: 0 1.5rem; } }
+    .page-template-template-giveaway #gform_wrapper_2 .gfield_label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.9rem;
+      line-height: 0.7;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 1.4rem; }
+    .page-template-template-giveaway #gform_wrapper_2 input[type="text"] {
+      outline: none;
+      border: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1rem;
+      border-radius: 3px;
+      width: 50%;
+      padding: 1.2rem 1.7rem;
+      border: 1.5px solid #c79b7e; }
+      @media only screen and (max-width: 800px) {
+        .page-template-template-giveaway #gform_wrapper_2 input[type="text"] {
+          width: 100%;
+          padding: 0.9rem 1.2rem; } }
+    .page-template-template-giveaway #gform_wrapper_2 .gform_footer {
+      text-align: center; }
+    .page-template-template-giveaway #gform_wrapper_2 .gform_button {
+      padding: 0.9rem 1.2rem;
+      cursor: pointer;
+      background-color: transparent;
+      color: #000;
+      border: 1px solid #c79b7e;
+      border-radius: 3px;
+      font-family: "Montserrat", sans-serif; }
+      .page-template-template-giveaway #gform_wrapper_2 .gform_button:hover {
+        transition: all 300ms ease-in;
+        background-color: #c79b7e;
+        color: #fff; }
+    .page-template-template-giveaway #gform_wrapper_2 .ginput_container_text {
+      margin-bottom: 1.5rem; }
+    .page-template-template-giveaway #gform_wrapper_2 .gform_submission_error {
+      font-family: "Montserrat", sans-serif; }
+    .page-template-template-giveaway #gform_wrapper_2 .gfield--width-full img {
+      height: 4rem;
+      object-fit: cover;
+      margin-bottom: 1.2rem; }
+    .page-template-template-giveaway #gform_wrapper_2 #field_2_4 {
+      margin: 0 auto; }
+    .page-template-template-giveaway #gform_wrapper_2 #gform_confirmation_message_2 {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      color: #fff;
+      font-size: 1.2rem; }
+
+#gform_confirmation_wrapper_2 {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 4.5rem 0;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Montserrat", sans-serif; }
+  @media only screen and (max-width: 800px) {
+    #gform_confirmation_wrapper_2 {
+      max-width: 70%;
+      padding-left: 1rem;
+      padding-right: 1rem; } }
+  #gform_confirmation_wrapper_2::before {
+    content: '';
+    background-color: #c79b7e;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: -9%;
+    z-index: -1;
+    border-radius: 4px; }
+    @media only screen and (max-width: 800px) {
+      #gform_confirmation_wrapper_2::before {
+        width: 90%;
+        left: 17%; } }
+
+#gform_2 {
+  display: none; }
+
+.book-now {
+  position: relative; }
+  .book-now__info-btn {
+    padding: 1.2rem 0.9rem;
+    border: none;
+    border-radius: 2px;
+    background-color: #7c5046;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 3;
+    margin-left: -1rem;
+    margin-top: 2.5rem; }
+    @media only screen and (max-width: 800px) {
+      .book-now__info-btn {
+        margin-left: 0;
+        padding: 0.9rem 0.7rem; } }
+    .book-now__info-btn:hover {
+      transition: all 300ms ease-in;
+      background-color: #c79b7e; }
+  .book-now__info-popup {
+    background-color: #7c5046;
+    padding: 3.5rem 4rem;
+    width: 50%;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 1.2px;
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000; }
+    @media only screen and (max-width: 800px) {
+      .book-now__info-popup {
+        width: 80%;
+        padding: 1.5rem 1.5rem; } }
+    .book-now__info-popup p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 1.2rem 0;
+      color: #fff; }
+      @media only screen and (max-width: 800px) {
+        .book-now__info-popup p {
+          font-size: 0.8rem; } }
+  .book-now .show-popup {
+    opacity: 1;
+    transition: all 300ms ease-in;
+    z-index: 15; }
+  .book-now__info-close {
+    margin-left: auto;
+    height: 1.1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem; }
+    @media only screen and (max-width: 800px) {
+      .book-now__info-close {
+        height: 0.9rem;
+        right: 0.5rem; } }
+  .book-now__info-title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 800px) {
+      .book-now__info-title {
+        font-size: 1rem; } }
+
+.hide-btn {
+  display: none; }
+
+.info-btn-margin {
+  margin-top: 1.5rem; }
+
+@media only screen and (max-width: 800px) {
+  .book-now-mobile-height {
+    height: 60vh; } }
+
+.error-404 {
+  background-color: #c79b7e;
+  display: grid;
+  grid-template-columns: 1.4fr 0.7fr;
+  grid-gap: 1.5rem;
+  justify-items: center; }
+  @media only screen and (max-width: 800px) {
+    .error-404 {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 0; } }
+  .error-404__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff; }
+    @media only screen and (max-width: 800px) {
+      .error-404__title {
+        font-size: 2.2rem; } }
+  .error-404__content {
+    padding-left: 4rem;
+    padding-top: 8rem; }
+    .error-404__content p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.4rem;
+      color: #fff;
+      margin-top: 1.5rem; }
+      @media only screen and (max-width: 800px) {
+        .error-404__content p {
+          font-size: 1rem; } }
+    @media only screen and (max-width: 800px) {
+      .error-404__content {
+        order: 2;
+        padding-top: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center; } }
+  .error-404__link {
+    background-color: #fff;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    padding: 1.25rem 2.5rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-top: 2.5rem; }
+    .error-404__link:hover {
+      transition: all 300ms ease-in;
+      background-color: #000;
+      color: #fff; }
+  @media only screen and (max-width: 800px) {
+    .error-404__question {
+      order: 1; } }
+  .error-404__question-mark {
+    font-family: "Oswald", sans-serif;
+    font-size: 30.5rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center; }
+    @media only screen and (max-width: 800px) {
+      .error-404__question-mark {
+        font-size: 20rem; } }
 
 /*# sourceMappingURL=style.css.map*/

@@ -39,8 +39,7 @@
   .am-select-date
   .am-calendar-picker
   .c-day-background {
-  background-color: transparent !important;
-  border: 3px solid $nude !important;
+	  color: $white !important;
 }
 
 .amelia-app-booking
@@ -90,38 +89,8 @@
   padding-bottom: 1.2rem;
   margin-bottom: 2rem;
   .el-row {
-    .el-col {
-      &:nth-child(5),
-      &:nth-child(6) {
-        border-top: 2px solid $black;
-        padding-top: 1.5rem;
-        @media only screen and (max-width: 800px) {
-          border: none;
-        }
-        &:nth-child(5) {
-          @media only screen and (max-width: 800px) {
-            border-top: 2px solid $black;
-          }
-        }
-      }
-    }
-  }
-  &:before {
-    content: "Let's take care of the legal stuff";
-    display: block;
-    top: 0;
-    left: 0;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: $PTSerif;
-    margin-bottom: 1rem;
-    @media only screen and (max-width: 800px) {
-      margin-left: 0;
-      margin-left: 1rem;
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+    .el-col:nth-child(5) {
+  
     }
   }
   .el-row:first-child {
@@ -141,15 +110,6 @@
 .am-confirmation-deposit {
   display: block !important;
 }
-
-.amelia-app-booking #am-step-booking .am-select-service,
-.amelia-app-booking .am-step-booking-catalog .am-select-service {
-  // margin-top: 4rem !important;
-}
-
-// form.el-form--label-top {
-//     margin-top: 4rem !important;
-// }
 
 .am-active-picker form.el-form--label-top {
   margin-top: 0rem !important;
@@ -198,9 +158,6 @@
 
 label[for="serviceId"] {
   margin-left: 5rem !important;
-  @media only screen and (max-width: 800px) {
-    margin-left: 6rem !important;
-  }
 }
 
 .amelia-app-booking
@@ -259,30 +216,15 @@ label[for="serviceId"] {
   }
 }
 
-.am-custom-fields .el-row .el-col:nth-child(5) {
-  &::before {
-    content: "Anything else you'd like to tell me?";
-    font-family: $PTSerif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 1.4rem;
-    @media only screen and (max-width: 800px) {
-      margin-left: 0;
-      font-size: 1.2rem;
-    }
-  }
-}
-
 .am-custom-fields .el-row .el-col:nth-child(6) {
 }
 .am-cf-3 {
   margin-top: 1.9rem;
 }
 
-.am-cf-12 {
-  margin-top: 6rem;
-}
+// .am-cf-12 {
+//   margin-top: 6rem;
+// }
 
 .amelia-app-booking
   #am-step-booking
@@ -297,13 +239,6 @@ label[for="serviceId"] {
   background-color: $black !important;
   span {
     color: $white !important;
-  }
-}
-
-.am-cf-1 {
-  margin-top: 3.3rem;
-  @media only screen and (max-width: 800px) {
-    margin-top: 0;
   }
 }
 
@@ -420,15 +355,6 @@ label[for="serviceId"] {
     display: none !important;
   }
 
-  // .el-form--label-top {
-  //   &::after {
-  //     content: 'Standard Length: Waist' !important;
-  //      display: block !important;
-  //      font-family: 'Roboto', 'sans-serif';
-  //      font-size: 0.9rem;
-  //      text-align: center;
-  //      margin-top: -7rem;
-  //   }
 }
 
 .am-active-picker .am-select-service-option {
@@ -450,6 +376,11 @@ label[for="serviceId"] {
 
 .am-extras {
   margin-top: 3rem;
+
+  @media only screen and (max-width: 800px) {
+	margin-top: 0;
+  }
+
 }
 
 .am-active-picker .am-extras {
@@ -490,3 +421,19 @@ label[for="serviceId"] {
 .am-extras .el-row:nth-child(2) .el-col .el-form-item {
   display: none;
 }
+
+.am-cf-6 {
+  margin-top: 1rem;
+}
+
+.am-select-service {
+  margin-top: 4rem;
+//   @media only screen and (max-width: 800px) {
+//     // margin-top: 15rem;
+//   }
+}
+
+.am-active-picker .am-select-service {
+  margin-top: 0;
+}
+

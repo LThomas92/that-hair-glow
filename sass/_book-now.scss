@@ -1,0 +1,103 @@
+.book-now {
+	position: relative;
+	&__info-btn{
+		padding: 1.2rem 0.9rem;
+		border: none;
+		border-radius: 2px;
+		background-color: $brown;
+		color: $white;
+		font-family: $monseratt;
+		font-weight: 600;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		z-index: 3;
+		margin-left: -1rem;
+		margin-top: 2.5rem;
+		@media only screen and (max-width: 800px) {
+			margin-left: 0;
+			padding: 0.9rem 0.7rem;
+		  }
+		&:hover {
+			transition: all 300ms ease-in;
+			background-color: $nude;
+		}
+	}
+	&__info-popup {
+		background-color: $brown;
+		padding: 3.5rem 4rem;
+		width: 50%;
+		transition: all 300ms ease-in-out;
+		opacity: 0;
+		margin: 0 auto;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		border-radius: 1.2px;
+		-webkit-box-shadow: 0 0 10px $black;
+        box-shadow: 0 0 10px $black;
+		@media only screen and (max-width: 800px) {
+			width: 80%;
+			padding: 1.5rem 1.5rem;
+		  }
+		p {
+			font-family: $monseratt;
+			font-size: 1.1rem;
+			font-weight: 500;
+			line-height: 1.2;
+			margin: 1.2rem 0;
+			color: $white;
+			@media only screen and (max-width: 800px) {
+				font-size: 0.8rem;
+			  }
+		}
+	}
+	.show-popup {
+		opacity: 1;
+		transition: all 300ms ease-in;
+		z-index: 15;
+	}
+	&__info-close {
+		margin-left: auto;
+		height: 1.1rem;
+		cursor: pointer;
+		position: absolute;
+		top: 1rem;
+		right: 1.2rem;
+		@media only screen and (max-width: 800px) {
+			height: 0.9rem;
+			right: 0.5rem;
+		  }
+	}
+	&__info-title {
+		text-align: center;
+		font-family: $monseratt;
+		font-size: 1.4rem;
+		color: $white;
+		margin-bottom: 2.5rem;
+		@media only screen and (max-width: 800px) {
+			font-size: 1rem;
+		  }
+	}
+}
+
+.hide-btn {
+	display: none;
+}
+
+.info-btn-margin {
+	margin-top: 1.5rem;
+}
+
+.book-now-mobile-height {
+	@media only screen and (max-width: 800px) {
+		height: 60vh;
+	  }
+}
+
+.book-now-margin {
+
+}

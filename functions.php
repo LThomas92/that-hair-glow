@@ -74,6 +74,7 @@ if ( ! function_exists( 'that_hair_glow_setup' ) ) :
 				register_nav_menus(
 					array(
 						'menu-1' => esc_html__( 'Primary', 'That Hair Glow' ),
+						'menu-2' => esc_html__( 'Secondary', 'That Hair Glow' ),
 					)
 		        );
 
