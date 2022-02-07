@@ -1,8 +1,39 @@
 footer {
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
-.copyright-text {
+// .site-footer {
+//   position: relative;
+//   &::after {
+//     content: '';
+//     background-color: $brown-2;
+//     width: 25%;
+//     height: 1.8px;
+//     display: block;
+//     position: absolute;
+//     top: -25px;
+//     left: 50%;
+//     transform: translate(-50% , 50%);
+//   }
+// }
+
+// .white-footer {
+//   position: relative;
+//   margin-top: 13rem;
+//   &::before {
+//     content: '';
+//     background-color: $white !important;
+//     width: 25%;
+//     height: 1.8px;
+//     display: block;
+//     position: absolute;
+//     top: -45px;
+//     left: 50%;
+//     transform: translate(-50% , 50%);
+//   }
+// }
+
+.copyright-text, .laws-and-codes {
   font-family: $monseratt;
   font-size: 1rem;
   line-height: 18px;
@@ -13,6 +44,21 @@ footer {
     margin-top: 5rem;
     font-size: 0.8rem;
   }
+  a {
+    font-family: $monseratt;
+    color: $white;
+    transition: all 300ms ease-in;
+    &:hover {
+      color: $brown-2;
+    }
+  }
+}
+
+.laws-and-codes {
+  @media only screen and (max-width: 800px) {
+    margin-top: 0rem;
+    font-size: 0.8rem;
+  }
 }
 
 .footer-nav {
@@ -21,6 +67,9 @@ footer {
     justify-content: center;
     list-style: none;
     margin-top: 1.5rem;
+    @media only screen and (max-width: 800px) {
+      margin-top: 0rem;
+    }
     li a {
       font-family: $monseratt;
       font-size: 1rem;
@@ -28,10 +77,28 @@ footer {
       color: $white;
       text-decoration: underline;
       text-underline-position: under;
+      @media only screen and (max-width: 800px) {
+        font-size: 0.9rem;
+      }
       &:hover {
         transition: all 300ms ease-in;
         color: $black;
       }
     }
+  }
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 2.5rem;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }

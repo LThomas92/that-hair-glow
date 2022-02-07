@@ -61,9 +61,10 @@
 //footer
 .that-hair-glow-footer-quote {
   font-family: $cicleGordita;
-  font-size: 2.1rem;
+  font-size: 1.6rem;
   text-align: center;
   color: $white;
+  margin-bottom: 0.2rem;
   @media only screen and (max-width: 800px) {
     font-size: 1.6rem;
     padding: 0 1.2rem;
@@ -72,10 +73,10 @@
 
 .that-hair-glow-footer-txt {
   font-family: $cicleGordita;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-align: center;
   padding-top: 1.8rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.3rem;
 }
 
 .address {
@@ -269,7 +270,7 @@ address {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: 1rem;
   @media only screen and (max-width: 767px) {
     margin-bottom: -4rem;
   }

@@ -1,6 +1,5 @@
 <?php
 /**
-<<<<<<< HEAD
  * The main template file
  *
  * This is the most generic template file in a WordPress theme
@@ -36,20 +35,3 @@ get_header();
 </div><!-- #primary -->
 <?php
 get_footer();
-=======
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
-
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define( 'WP_USE_THEMES', true );
-
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
->>>>>>> 0fab2c7fcfbee7049afff7ef01171e51126d4a6e

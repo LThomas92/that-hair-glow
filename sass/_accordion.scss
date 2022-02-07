@@ -63,7 +63,7 @@
 }
 
 .accordion-color-0, .accordion-color-2, .accordion-color-4, .accordion-color-6, .accordion-color-8 {
-  background-color: $brown;
+  background-color: $brown-2;
   color: $white !important;
   border: 3px solid $white;
   &:hover {
@@ -74,8 +74,8 @@
 
 .accordion-color-1, .accordion-color-3, .accordion-color-5, .accordion-color-7 {
   background-color: $white;
-  border: 3px solid $brown;
-  color: $brown !important;
+  border: 3px solid $brown-2;
+  color: $brown-2 !important;
   &:hover {
     transition: all 300ms ease-in;
     color: $black !important;

@@ -1,0 +1,103 @@
+.template-about-me {
+	background-color: $white;
+	padding-bottom: 4rem;
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-width: 1024px) {
+		flex-direction: column;
+	}
+	&__title {
+		font-family: $monseratt;
+		font-size: 1.2rem;
+		font-weight: 400;
+		writing-mode: vertical-rl;
+		transform: scale(-1);
+		text-transform: uppercase;
+		margin-left: 25px;
+		position: relative;
+		white-space: nowrap;
+		@media only screen and (max-width: 1024px) {
+			writing-mode: initial;
+			transform: none;
+			margin-right: 25px;
+		}
+	}
+	&__title-container {
+		display: flex;
+		flex-direction: column;
+		margin-top: auto;
+		margin-bottom: auto;
+		@media only screen and (max-width: 1024px) {
+			flex-direction: row;
+			align-items: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 3.5rem;
+		}
+	}
+	&__top-line {
+		background-color: $nude;
+		width: 0.2rem;
+		height: 10rem;
+		display: block;
+		margin-left: 40px;
+		margin-bottom: 2rem;
+		@media only screen and (max-width: 1024px) {
+			width: 10rem;
+			height: 0.2rem;
+			display: inline-block;
+			margin-bottom: 0;
+			margin-left: 20px;
+		}
+		@media only screen and (max-width: 600px) {
+			width: 6rem;
+		}
+	}
+	&__bottom-line {
+		background-color: $nude;
+		width: 0.2rem;
+		height: 10rem;
+		display: block;
+		margin-left: 40px;
+		margin-top: 2rem;
+		@media only screen and (max-width: 1024px) {
+			width: 10rem;
+			height: 0.2rem;
+			display: inline-block;
+			margin-top: 0;
+			margin-left: 0;
+			margin-right: 40px;
+		}
+		@media only screen and (max-width: 600px) {
+			width: 6rem;
+		}
+	}
+	&__main-content {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 4rem;
+		margin-left: 60px;
+		@media only screen and (max-width: 1024px) {
+			flex-direction: column;
+			margin-left: 15px;
+			margin-right: 15px
+		}
+	}
+	&__content {
+		flex-basis: calc((100% / 2) - 4rem);
+		p {
+			font-family: $monseratt;
+			margin-bottom: 1.8rem;
+		}
+	}
+	&__image {
+		margin-left: 55px;
+		@media only screen and (max-width: 1024px) {
+			margin-left: 25px;
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

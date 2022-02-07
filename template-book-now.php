@@ -15,10 +15,9 @@
 		document.querySelector('#amelia-step-booking0').classList.remove('book-now-mobile-height');
 	}
 	window.beforeBookingLoaded = function(appointment, service, provider, location) { 
-		document.querySelector('#amelia-step-booking0').classList.add('book-now-mobile-height');
+    document.querySelector('#amelia-step-booking0').classList.add('book-now-mobile-height');
 		var addElement = document.querySelector('.am-add-element');
 		var bookNowBtn = document.querySelector('.book-now__info-btn');
-		
 	}
 </script>
 

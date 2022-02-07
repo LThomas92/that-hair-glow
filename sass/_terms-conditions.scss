@@ -2,6 +2,7 @@
   background-color: $white;
   .that-hair-glow-footer-quote {
     color: $nude;
+    margin-bottom: 1.5rem;
   }
   .footer-nav ul li a {
     color: $black;
@@ -78,6 +79,15 @@
       color: $black;
       @media only screen and (max-width: 800px) {
         font-size: 0.8rem;
+      }
+      a {
+        font-size: 1rem;
+        font-weight: 350;
+        color: $black;
+        font-family: $monseratt;
+        @media only screen and (max-width: 800px) {
+          font-size: 0.8rem;
+        }
       }
     }
     @media only screen and (max-width: 800px) {

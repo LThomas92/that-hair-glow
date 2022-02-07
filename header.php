@@ -14,14 +14,16 @@
 <html <?php language_attributes(); ?>>
 <head>
 
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--  Essential META Tags -->
 
-<meta property="og:title" content="That Hair Glow">
-<meta property="og:description" content="Making you feel better one strand at a time">
-<meta property="og:image" content="https://i.imgur.com/P7Iid8b.jpg" />
-<meta property="og:image:secure_url" content="https://i.imgur.com/P7Iid8b.jpg">
+
+<meta name="title" property="og:title" content="That Hair Glow">
+<meta property="og:description" content="All about that natural effect">
+<meta name="image" property="og:image" content="http://thathairglow.com/wp-content/uploads/2021/10/phonto.jpg" />
+<meta property="og:image:secure_url" content="http://thathairglow.com/wp-content/uploads/2021/10/phonto.jpg">
 <meta property="og:type" content="image/jpg">
 <meta property="og:image:width" content="300">
 <meta property="og:image:height" content="300">
@@ -36,13 +38,14 @@
 
 <!--  Non-Essential, But Required for Analytics -->
 <meta property="fb:app_id" content="your_app_id" />
-<meta name="twitter:site" content="@thathairglow">
+<meta name="twitter:site" content="@website-username">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 

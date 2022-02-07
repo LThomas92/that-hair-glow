@@ -5,13 +5,13 @@ body {
   background-color: $nude;
 }
 
-// main {
-//  min-height: calc(100vh - 50px);
-// }
-
 footer {
-  height: 50px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
+
 a {
   font-family: $cochin;
 }
@@ -54,3 +54,4 @@ a {
     margin-bottom: 2rem;
   }
 }
+

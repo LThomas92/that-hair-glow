@@ -1,0 +1,422 @@
+.page-template-template-reviews {
+  .reviews-button {
+    position: relative;
+  }
+}
+
+.reviews-form {
+	max-width: 50%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 4rem 6rem;
+	text-align: center;
+  opacity: 0;
+  display: none;
+	transition: all 300ms ease-in;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+	background: $white;
+	border-radius: 2px;
+  margin-bottom: 10rem;
+  @media only screen and (max-width: 800px) {
+    padding: 2.5rem 2rem;
+    max-width: 80%;
+  }
+	&--active {
+		opacity: 1;
+		z-index: 25;
+    top: -40%;
+    display: block;
+	}
+  &--conf-active {
+    top: 60%;
+    background: $brown-2;
+    color: $white;
+    @media only screen and (max-width: 800px) {
+      top: 30%;
+    }
+  }
+
+
+	&__close-icon {
+		height: 1rem;
+		position: absolute;
+		top: 1.2rem;
+		right: 1.5rem;
+		cursor: pointer;
+		path {
+			fill: rgba($black, 0.2);
+			transition: all 300ms ease-in;
+			&:hover {
+				fill: $black;
+			}
+		}
+	}
+
+  input[type="text"] {
+    font-family: $monseratt;
+  }
+
+  .gfield {
+    margin: 0.9rem 0;
+  }
+
+  .gform_confirmation_message {
+    font-family: $monseratt;
+    font-size: 18px;
+    @media only screen and (max-width: 800px) {
+      font-size: 14px;
+    }
+  }
+
+  .gfield_select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $black;
+    padding: 0 !important;
+    padding-bottom: 9px !important;
+    -webkit-appearance: menulist;
+  }
+
+  .gfield_label {
+    font-family: $monseratt !important;
+    text-align: center;
+  }
+
+  .gform_button {
+    padding: 1.2rem 1.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $nude;
+    color: $white;
+    transition: all 300ms ease-in;
+    &:hover {
+      background-color: $brown-2;
+    }
+  }
+
+	&__label {
+		font-family: $monseratt;
+		font-size: 0.9rem;
+		font-weight: 500;
+		display: block;
+		margin: 4.5rem 0;
+	}
+
+	&__textarea {
+		max-width: 80%;
+		width: 100%;
+		border: 0.5px solid rgba($black, 0.2);
+		margin-bottom: 2.5rem;
+	}
+
+	&__question-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__star-rating {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__submit {
+		display: block;
+		padding: 1rem 1.2rem;
+		background-color: $black;
+		color: $white;
+		outline: none;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: all 300ms ease-in;
+		margin-left: auto;
+		margin-right: auto;
+		&:hover {
+			color: $nude;
+		}
+	}
+}
+
+.reviews-button {
+	padding: 0.9rem 1.4rem;
+	background: $white;
+	border: none;
+	outline: none;
+	font-family: $monseratt;
+	font-weight: 600;
+	border-radius: 1.5px;
+	cursor: pointer;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+div.stars {
+  display: inline-block;
+}
+
+input.star { display: none; }
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: #444;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '\f005';
+  color: #FD4;
+  transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #FE7;
+  text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before { color: #F62; }
+
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+.rating {
+	float:left;
+	border:none;
+}
+.rating:not(:checked) > input {
+	position:absolute;
+	top:-9999px;
+	clip:rect(0, 0, 0, 0);
+}
+.rating:not(:checked) > label {
+	float:right;
+	width:1em;
+	padding:0 .1em;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+	font-size:200%;
+	line-height:1.2;
+	color:#ddd;
+}
+.rating:not(:checked) > label:before {
+	content:'★';
+}
+.rating > input:checked ~ label {
+	color: #f70;
+}
+.rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating > input:checked + label:hover, .rating > input:checked + label:hover ~ label, .rating > input:checked ~ label:hover, .rating > input:checked ~ label:hover ~ label, .rating > label:hover ~ input:checked ~ label {
+	color: #ea0;
+}
+.rating > label:active {
+	position:relative;
+}
+
+.gf-rating-star {
+  color: gray;
+  cursor: pointer;
+  font-size: 2em;
+}
+.gf-rating-star + .gf-rating-star {
+  padding-left: 4px;
+}
+.gf-rating-star-active {
+  color: $nude;
+}
+
+.checked {
+  color: $nude;
+}
+
+.stars {
+  .fa-star {
+    font-size: 35px;
+    color: none;
+  }
+}
+
+.reviews-slider {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-slide {
+  height: auto;
+  background-color: rgba($white, 0.8);
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media only screen and (max-width: 800px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 8rem);
+    margin-top: 2rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @media only screen and (max-width: 1300px) {
+      width: calc(100% - 6rem);
+      top: 70%;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      width: calc(100% - 2rem);
+    }
+
+    @media only screen and (max-width: 900px) {
+      top: 65%;
+    }
+    @media only screen and (max-width: 800px) {
+      width: calc(100% - 1rem);
+    }
+  }
+
+
+  &__prev {
+    background-image: url('../img/arrow-thin-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    transform: scale(-1, 1);
+    cursor: pointer;
+    margin-right: 2.5rem;
+
+    path {
+      transition: fill 300ms ease;
+      &:hover {
+        fill: $brown-2;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__next {
+    background-image: url('../img/arrow-thin-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    path {
+      transition: fill 300ms ease;
+      &:hover {
+        fill: $brown-2;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+    font-family: $monseratt;
+    font-size: 1.9rem;
+    @media only screen and (max-width: 800px) {
+      font-size: 1.2rem;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    font-family: $monseratt;
+    font-size: 1.9rem;
+    @media only screen and (max-width: 800px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__image {
+    text-align: center;
+    position: relative;
+  
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid $nude;
+      display: block;
+      margin: 1.8rem auto;
+      transition: all 300ms ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: rotate(30deg);
+      }
+    }
+  }
+
+  &__service {
+    font-weight: 700;
+  }
+  &__question {
+    margin: 1.2rem 0;
+    font-family: $monseratt;
+    @media only screen and (max-width: 800px) {
+      font-size: 0.8rem;
+    }
+  }
+  &__answer {
+    font-family: $monseratt;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    @media only screen and (max-width: 800px) {
+      font-size: 0.8rem;
+    }
+  }
+  &__date {
+    font-family: $monseratt;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    margin-top: 0.8rem;
+  }
+}
+
+.reviews-form--conf-active {
+  .reviews-form__close-icon {
+    path {
+			fill: $white;
+			transition: all 300ms ease-in;
+			&:hover {
+				fill: rgba($white, 0.2);
+			}
+		}
+  }
+}
